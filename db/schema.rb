@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_07_08_223127) do
+ActiveRecord::Schema[7.0].define(version: 2023_07_08_223343) do
   create_table "developers", force: :cascade do |t|
     t.string "name"
     t.integer "employee_id"
@@ -21,6 +21,21 @@ ActiveRecord::Schema[7.0].define(version: 2023_07_08_223127) do
     t.boolean "is_on_pto"
     t.integer "manager_id"
     t.integer "user_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "sprints", force: :cascade do |t|
+    t.integer "number"
+    t.datetime "start_date"
+    t.datetime "end_date"
+    t.boolean "is_active"
+    t.boolean "is_successful"
+    t.integer "kudos_id"
+    t.integer "manager_id"
+    t.integer "user_id"
+    t.text "description"
+    t.string "name"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
