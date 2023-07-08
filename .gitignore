@@ -1,0 +1,9 @@
+tmp/
+log/
+vendor/bundle
+.chef
+.DS_Store
+.idea
+.puppet
+.vagrant
+.bundle
