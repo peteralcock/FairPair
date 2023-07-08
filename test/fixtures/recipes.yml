@@ -1,0 +1,59 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  source_url: MyString
+  youtube_url: MyString
+  image_url: MyString
+  thumbnail_url: MyString
+  instructions: MyText
+  grocery_list: MyText
+  ingredient_1: MyString
+  ingredient_2: MyString
+  ingredient_3: MyString
+  ingredient_4: MyString
+  ingredient_5: MyString
+  ingredient_6: MyString
+  ingredient_7: MyString
+  ingredient_8: MyString
+  ingredient_9: MyString
+  ingredient_10: MyString
+  ingredient_11: MyString
+  ingredient_12: MyString
+  ingredient_13: MyString
+  ingredient_14: MyString
+  ingredient_15: MyString
+  ingredient_16: MyString
+  ingredient_17: MyString
+  ingredient_18: MyString
+  ingredient_19: MyString
+  ingredient_20: MyString
+
+two:
+  name: MyString
+  source_url: MyString
+  youtube_url: MyString
+  image_url: MyString
+  thumbnail_url: MyString
+  instructions: MyText
+  grocery_list: MyText
+  ingredient_1: MyString
+  ingredient_2: MyString
+  ingredient_3: MyString
+  ingredient_4: MyString
+  ingredient_5: MyString
+  ingredient_6: MyString
+  ingredient_7: MyString
+  ingredient_8: MyString
+  ingredient_9: MyString
+  ingredient_10: MyString
+  ingredient_11: MyString
+  ingredient_12: MyString
+  ingredient_13: MyString
+  ingredient_14: MyString
+  ingredient_15: MyString
+  ingredient_16: MyString
+  ingredient_17: MyString
+  ingredient_18: MyString
+  ingredient_19: MyString
+  ingredient_20: MyString

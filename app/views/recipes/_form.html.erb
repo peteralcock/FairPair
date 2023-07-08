@@ -1,0 +1,152 @@
+<%= form_with(model: recipe) do |form| %>
+  <% if recipe.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(recipe.errors.count, "error") %> prohibited this recipe from being saved:</h2>
+
+      <ul>
+        <% recipe.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :name, style: "display: block" %>
+    <%= form.text_field :name %>
+  </div>
+
+  <div>
+    <%= form.label :source_url, style: "display: block" %>
+    <%= form.text_field :source_url %>
+  </div>
+
+  <div>
+    <%= form.label :youtube_url, style: "display: block" %>
+    <%= form.text_field :youtube_url %>
+  </div>
+
+  <div>
+    <%= form.label :image_url, style: "display: block" %>
+    <%= form.text_field :image_url %>
+  </div>
+
+  <div>
+    <%= form.label :thumbnail_url, style: "display: block" %>
+    <%= form.text_field :thumbnail_url %>
+  </div>
+
+  <div>
+    <%= form.label :instructions, style: "display: block" %>
+    <%= form.text_area :instructions %>
+  </div>
+
+  <div>
+    <%= form.label :grocery_list, style: "display: block" %>
+    <%= form.text_area :grocery_list %>
+  </div>
+
+  <div>
+    <%= form.label :ingredient_1, style: "display: block" %>
+    <%= form.text_field :ingredient_1 %>
+  </div>
+
+  <div>
+    <%= form.label :ingredient_2, style: "display: block" %>
+    <%= form.text_field :ingredient_2 %>
+  </div>
+
+  <div>
+    <%= form.label :ingredient_3, style: "display: block" %>
+    <%= form.text_field :ingredient_3 %>
+  </div>
+
+  <div>
+    <%= form.label :ingredient_4, style: "display: block" %>
+    <%= form.text_field :ingredient_4 %>
+  </div>
+
+  <div>
+    <%= form.label :ingredient_5, style: "display: block" %>
+    <%= form.text_field :ingredient_5 %>
+  </div>
+
+  <div>
+    <%= form.label :ingredient_6, style: "display: block" %>
+    <%= form.text_field :ingredient_6 %>
+  </div>
+
+  <div>
+    <%= form.label :ingredient_7, style: "display: block" %>
+    <%= form.text_field :ingredient_7 %>
+  </div>
+
+  <div>
+    <%= form.label :ingredient_8, style: "display: block" %>
+    <%= form.text_field :ingredient_8 %>
+  </div>
+
+  <div>
+    <%= form.label :ingredient_9, style: "display: block" %>
+    <%= form.text_field :ingredient_9 %>
+  </div>
+
+  <div>
+    <%= form.label :ingredient_10, style: "display: block" %>
+    <%= form.text_field :ingredient_10 %>
+  </div>
+
+  <div>
+    <%= form.label :ingredient_11, style: "display: block" %>
+    <%= form.text_field :ingredient_11 %>
+  </div>
+
+  <div>
+    <%= form.label :ingredient_12, style: "display: block" %>
+    <%= form.text_field :ingredient_12 %>
+  </div>
+
+  <div>
+    <%= form.label :ingredient_13, style: "display: block" %>
+    <%= form.text_field :ingredient_13 %>
+  </div>
+
+  <div>
+    <%= form.label :ingredient_14, style: "display: block" %>
+    <%= form.text_field :ingredient_14 %>
+  </div>
+
+  <div>
+    <%= form.label :ingredient_15, style: "display: block" %>
+    <%= form.text_field :ingredient_15 %>
+  </div>
+
+  <div>
+    <%= form.label :ingredient_16, style: "display: block" %>
+    <%= form.text_field :ingredient_16 %>
+  </div>
+
+  <div>
+    <%= form.label :ingredient_17, style: "display: block" %>
+    <%= form.text_field :ingredient_17 %>
+  </div>
+
+  <div>
+    <%= form.label :ingredient_18, style: "display: block" %>
+    <%= form.text_field :ingredient_18 %>
+  </div>
+
+  <div>
+    <%= form.label :ingredient_19, style: "display: block" %>
+    <%= form.text_field :ingredient_19 %>
+  </div>
+
+  <div>
+    <%= form.label :ingredient_20, style: "display: block" %>
+    <%= form.text_field :ingredient_20 %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>
