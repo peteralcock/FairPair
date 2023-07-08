@@ -10,7 +10,21 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_07_08_222531) do
+ActiveRecord::Schema[7.0].define(version: 2023_07_08_223127) do
+  create_table "developers", force: :cascade do |t|
+    t.string "name"
+    t.integer "employee_id"
+    t.integer "kudos"
+    t.integer "current_sprint_id"
+    t.integer "current_pairing_id"
+    t.string "job_title"
+    t.boolean "is_on_pto"
+    t.integer "manager_id"
+    t.integer "user_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "users", force: :cascade do |t|
     t.string "email", default: "", null: false
     t.string "encrypted_password", default: "", null: false
