@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :pairings
   resources :sprints
   resources :developers
   devise_for :users

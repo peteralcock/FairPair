@@ -1,0 +1,47 @@
+<%= form_with(model: pairing) do |form| %>
+  <% if pairing.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(pairing.errors.count, "error") %> prohibited this pairing from being saved:</h2>
+
+      <ul>
+        <% pairing.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :developer1_id, style: "display: block" %>
+    <%= form.number_field :developer1_id %>
+  </div>
+
+  <div>
+    <%= form.label :developer2_id, style: "display: block" %>
+    <%= form.number_field :developer2_id %>
+  </div>
+
+  <div>
+    <%= form.label :manager_id, style: "display: block" %>
+    <%= form.number_field :manager_id %>
+  </div>
+
+  <div>
+    <%= form.label :user_id, style: "display: block" %>
+    <%= form.number_field :user_id %>
+  </div>
+
+  <div>
+    <%= form.label :sprint_id, style: "display: block" %>
+    <%= form.number_field :sprint_id %>
+  </div>
+
+  <div>
+    <%= form.label :kudos_id, style: "display: block" %>
+    <%= form.number_field :kudos_id %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

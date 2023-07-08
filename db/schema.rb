@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_07_08_223343) do
+ActiveRecord::Schema[7.0].define(version: 2023_07_08_224406) do
   create_table "developers", force: :cascade do |t|
     t.string "name"
     t.integer "employee_id"
@@ -21,6 +21,17 @@ ActiveRecord::Schema[7.0].define(version: 2023_07_08_223343) do
     t.boolean "is_on_pto"
     t.integer "manager_id"
     t.integer "user_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "pairings", force: :cascade do |t|
+    t.integer "developer1_id"
+    t.integer "developer2_id"
+    t.integer "manager_id"
+    t.integer "user_id"
+    t.integer "sprint_id"
+    t.integer "kudos_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
