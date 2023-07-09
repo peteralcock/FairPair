@@ -49,14 +49,34 @@ The lead developer can save the generated schedule. The saved schedule is persis
 
 FairPair includes RSpec tests to ensure the functionality is working as expected. To run the tests, use the command `bundle exec rspec`.
 
-## Security
+## TO-DO
 
-FairPair is secure, ensuring that only the lead developer can view, save, and edit the schedule.
+Integration with External Calendar Services: Integrate with services like Google Calendar or Outlook to automatically add pair programming sessions to developers' calendars.
 
-## Contributing
+Slack Integration: Send notifications to a Slack channel when the pair programming schedule is updated.
 
-Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+Dietary Profile for Each User: Allow users to create a dietary profile with common dietary restrictions. This information can be used to filter taco recipes in the Taco Tracker.
+
+Wishlist for Taco Recipes: Allow users to save their favorite taco recipes to a wishlist for future reference.
+
+Analytics Dashboard: Provide insights into pair programming sessions, such as the most and least common pairs, the number of sessions per developer, etc.
+
+Gamification of Pair Programming: Add elements of gamification, such as points or badges, to encourage developers to participate in pair programming sessions.
+
+Machine Learning for Pairing Schedule: Use machine learning algorithms to optimize the pair programming schedule based on past data.
+
+
+Deployment
+
+- Containerization: Docker can be used to containerize the application which ensures consistency across different deployment environments. This has been done for you already, along with docker-compose.yml file for managing services like the database. Kubernetes on EKS can be used to manage the Docker containers and handle load balancing, networking, and scaling.
+- Managed Database: AWS RDS can be used for production-level Postgres database management.
+- CI/CD: Continuous Integration and Continuous Deployment can be implemented using tools such as Jenkins or GitHub Actions. This ensures that the codebase is always in a deployable state and reduces the time and risk of releasing new updates.
+- Monitoring and Error Logging: Tools like Sentry and Datadog can be used for real-time error tracking and monitoring application performance.
+
 
 ## License
 
 FairPair is released under the [MIT License](https://opensource.org/licenses/MIT).
+
+
+
