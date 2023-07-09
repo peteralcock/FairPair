@@ -68,7 +68,7 @@ Gamification of Pair Programming: Add elements of gamification, such as points o
 Machine Learning for Pairing Schedule: Use machine learning algorithms to optimize the pair programming schedule based on past data.
 
 
-Deployment
+## Deployment
 
 - Containerization: Docker can be used to containerize the application which ensures consistency across different deployment environments. This has been done for you already, along with docker-compose.yml file for managing services like the database. Kubernetes on EKS can be used to manage the Docker containers and handle load balancing, networking, and scaling.
 - Managed Database: AWS RDS can be used for production-level Postgres database management.
