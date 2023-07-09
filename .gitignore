@@ -1,3 +1,7 @@
+config/secrets.yml
+config/database.yml
+.env
+config/master.key
 tmp/
 log/
 vendor/bundle
