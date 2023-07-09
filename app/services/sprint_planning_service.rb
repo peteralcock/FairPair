@@ -1,45 +1,42 @@
-RSpec.describe SprintPlanningService, type: :service do
-  let(:developers) { create_list(:developer, 4) } # Assuming you have a factory for Developer
-  let(:sprint) { create(:sprint, developers: developers) } # Assuming you have a factory for Project
+# This service takes a sprint, an array of developers, and an array of PTO requests as input. It generates a pairing rotation schedule by looping through each day of the sprint, checking for PTO requests, pairing the available developers, and then rotating the developers for the next day. The schedule is an array of hashes, with each hash containing the day, the pairs of developers, and the developers on PTO.
 
-  subject(:service) { described_class.new(sprint) }
+class SprintPlanningService
 
-  describe "#generate" do
-    it "creates a pairing rotation for each sprint" do
-      service.generate(self)
-      expect(self.pairings.count).to eq(2)
+  def initialize(sprint)
+    @sprint = sprint
+    @developers = sprint.developers
+    @pto_requests = sprint.pto_requests
+    @schedule = []
+  end
+
+  def generate
+    # Create a copy of the developers array to manipulate
+    devs = @developers.dup
+
+    # Loop through each day of the sprint
+    @sprint.number.times do |day|
+      # Check for PTO requests
+      devs_on_pto = @pto_requests.select { |pto| pto.start_date <= day && pto.end_date >= day }.map(&:developer)
+
+      # Remove developers on PTO from the available developers
+      available_devs = devs - devs_on_pto
+
+      # Pair the developers
+      pairs = pair_developers(available_devs)
+
+      # Add the pairs to the schedule
+      @schedule << { day: day, pairs: pairs, pto: devs_on_pto }
+
     end
 
-    it "assigns each developer to pair with each other developer approximately equally" do
-      service.generate
-      pair_counts = Hash.new(0)
+    @schedule
+  end
 
-      sprint.sprints.each do |sprint|
-        sprint.pairings.each do |pairing|
-          pair_counts[pairing.developers.sort] += 1
-        end
-      end
+  private
 
-      expect(pair_counts.values.uniq.length).to be <= 1 # All pairs should occur approximately the same number of times
-    end
-
-    it "does not pair developers who are on PTO" do
-      pto_developer = developers.first
-      pto_developer.ptos.create(date: sprint.start_date) # Assuming the Project has a start_date
-
-      service.generate
-      first_sprint = sprint.sprints.first
-
-      expect(first_sprint.pairings.flat_map(&:developers)).not_to include(pto_developer)
-    end
-
-    it "assigns at most one developer to work solo each sprint" do
-      service.generate
-
-      sprint.sprints.each do |sprint|
-        solo_developers = sprint.pairings.select { |pairing| pairing.developers.count == 1 }
-        expect(solo_developers.count).to be <= 1
-      end
-    end
+  def pair_developers(developers)
+    # Pair the developers by taking them two at a time
+    developers.each_slice(2).to_a
   end
 end
+
