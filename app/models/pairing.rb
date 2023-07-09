@@ -1,6 +1,5 @@
 class Pairing < ApplicationRecord
   belongs_to :sprint
-  has_one :project, through: :sprint
-  belongs_to :developer1, class_name: 'Developer'
-  belongs_to :developer2, class_name: 'Developer', optional: true
+  has_one :developer1, class_name: 'Developer',:foreign_key => 'id', :primary_key => 'developer1_id'
+  has_one :developer2, class_name: 'Developer',:foreign_key => 'id', :primary_key => 'developer2_id'
 end

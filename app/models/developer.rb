@@ -1,5 +1,6 @@
 class Developer < ApplicationRecord
-  has_many :pairings
-  has_many :sprints, through: :pairings
-  has_many :projects, through: :sprints
+  validates_presence_of :name
+  has_many :pairings, :foreign_key => 'developer1'
+  has_many :pairings, :foreign_key => 'developer2'
+  belongs_to :sprint, optional: true
 end
