@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :diet_profiles
   devise_for :users
 
   namespace :admin do

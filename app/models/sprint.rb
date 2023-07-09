@@ -3,7 +3,7 @@ class Sprint < ApplicationRecord
   has_many :pairings
   has_many :developers
   has_many :pto_requests, :through => :developers
-
+  has_one :lead_developer, :class_name => "Developer", :primary_key => 'lead_developer_id', :foreign_key => 'id'
   def generate_pair_rotation_schedule
     developers = self.developers
       developers.each_slice(2) do |developers|

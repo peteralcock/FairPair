@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_07_09_030233) do
+ActiveRecord::Schema[7.0].define(version: 2023_07_09_031232) do
   create_table "developers", force: :cascade do |t|
     t.string "name"
     t.integer "user_id"
@@ -18,6 +18,18 @@ ActiveRecord::Schema[7.0].define(version: 2023_07_09_030233) do
     t.datetime "updated_at", null: false
     t.integer "sprint_it"
     t.integer "sprint_id"
+  end
+
+  create_table "diet_profiles", force: :cascade do |t|
+    t.integer "user_id"
+    t.integer "developer_id"
+    t.text "restrictions"
+    t.text "favorites"
+    t.text "allergies"
+    t.text "likes"
+    t.text "dislikes"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "pairings", force: :cascade do |t|

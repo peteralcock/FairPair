@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Diet profiles</h1>
+
+<div id="diet_profiles">
+  <% @diet_profiles.each do |diet_profile| %>
+    <%= render diet_profile %>
+    <p>
+      <%= link_to "Show this diet profile", diet_profile %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New diet profile", new_diet_profile_path %>

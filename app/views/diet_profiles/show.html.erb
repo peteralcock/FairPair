@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @diet_profile %>
+
+<div>
+  <%= link_to "Edit this diet profile", edit_diet_profile_path(@diet_profile) %> |
+  <%= link_to "Back to diet profiles", diet_profiles_path %>
+
+  <%= button_to "Destroy this diet profile", @diet_profile, method: :delete %>
+</div>
