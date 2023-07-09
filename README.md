@@ -24,8 +24,8 @@ The lead developer can save the generated schedule. The saved schedule is persis
 ## Setup
 
 ### Prerequisites
-- Ruby 3.0.0
-- Rails 6.0.0
+- Ruby 3.1.2
+- Rails 7.0.4
 - PostgreSQL 13.0
 
 ### Installation
