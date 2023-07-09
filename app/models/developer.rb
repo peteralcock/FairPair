@@ -4,4 +4,5 @@ class Developer < ApplicationRecord
   has_many :pairings, :foreign_key => 'developer2'
   has_many :pto_requests
   belongs_to :sprint, optional: true
+  belongs_to :user, optional: true
 end
