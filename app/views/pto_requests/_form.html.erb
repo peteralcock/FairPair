@@ -1,0 +1,52 @@
+<%= form_with(model: pto_request) do |form| %>
+  <% if pto_request.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(pto_request.errors.count, "error") %> prohibited this pto_request from being saved:</h2>
+
+      <ul>
+        <% pto_request.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :start_date, style: "display: block" %>
+    <%= form.datetime_field :start_date %>
+  </div>
+
+  <div>
+    <%= form.label :end_date, style: "display: block" %>
+    <%= form.datetime_field :end_date %>
+  </div>
+
+  <div>
+    <%= form.label :developer_id, style: "display: block" %>
+    <%= form.text_field :developer_id %>
+  </div>
+
+  <div>
+    <%= form.label :status, style: "display: block" %>
+    <%= form.text_field :status %>
+  </div>
+
+  <div>
+    <%= form.label :approved_at, style: "display: block" %>
+    <%= form.datetime_field :approved_at %>
+  </div>
+
+  <div>
+    <%= form.label :manager_id, style: "display: block" %>
+    <%= form.number_field :manager_id %>
+  </div>
+
+  <div>
+    <%= form.label :note, style: "display: block" %>
+    <%= form.text_area :note %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

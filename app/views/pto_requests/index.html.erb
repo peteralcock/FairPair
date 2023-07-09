@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Pto requests</h1>
+
+<div id="pto_requests">
+  <% @pto_requests.each do |pto_request| %>
+    <%= render pto_request %>
+    <p>
+      <%= link_to "Show this pto request", pto_request %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New pto request", new_pto_request_path %>

@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_07_08_224406) do
+ActiveRecord::Schema[7.0].define(version: 2023_07_09_004628) do
   create_table "developers", force: :cascade do |t|
     t.string "name"
     t.integer "user_id"
@@ -28,6 +28,19 @@ ActiveRecord::Schema[7.0].define(version: 2023_07_08_224406) do
     t.index ["developer1_id"], name: "index_pairings_on_developer1_id"
     t.index ["developer2_id"], name: "index_pairings_on_developer2_id"
     t.index ["sprint_id"], name: "index_pairings_on_sprint_id"
+  end
+
+  create_table "pto_requests", force: :cascade do |t|
+    t.datetime "start_date"
+    t.datetime "end_date"
+    t.integer "developer_id", null: false
+    t.string "status"
+    t.datetime "approved_at"
+    t.integer "manager_id"
+    t.text "note"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["developer_id"], name: "index_pto_requests_on_developer_id"
   end
 
   create_table "sprints", force: :cascade do |t|
@@ -56,4 +69,5 @@ ActiveRecord::Schema[7.0].define(version: 2023_07_08_224406) do
   add_foreign_key "pairings", "developers", column: "developer1_id"
   add_foreign_key "pairings", "developers", column: "developer2_id"
   add_foreign_key "pairings", "sprints"
+  add_foreign_key "pto_requests", "developers"
 end

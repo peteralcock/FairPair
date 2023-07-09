@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :pto_requests
   resources :pairings
   resources :sprints
   resources :developers
