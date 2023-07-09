@@ -1,4 +1,6 @@
 # FairPair
+![Honorable Pear](pear.png?raw=true "Honorable Pear")
+
 
 ## Developer Pairing Rotation Scheduler
 
