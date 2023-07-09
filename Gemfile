@@ -7,6 +7,7 @@ ruby "3.1.4"
 gem "rails", "~> 7.0.6"
 gem "devise"
 gem "httparty"
+gem 'administrate'
 
 # The original asset pipeline for Rails [https://github.com/rails/sprockets-rails]
 gem "sprockets-rails"

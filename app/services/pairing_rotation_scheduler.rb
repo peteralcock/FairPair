@@ -1,6 +1,7 @@
 # This service takes a sprint, an array of developers, and an array of PTO requests as input. It generates a pairing rotation schedule by looping through each day of the sprint, checking for PTO requests, pairing the available developers, and then rotating the developers for the next day. The schedule is an array of hashes, with each hash containing the day, the pairs of developers, and the developers on PTO.
 
 class PairingRotationScheduler
+
   def initialize(sprint, developers, pto_requests)
     @sprint = sprint
     @developers = developers
