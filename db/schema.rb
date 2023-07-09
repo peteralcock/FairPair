@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_07_09_023114) do
+ActiveRecord::Schema[7.0].define(version: 2023_07_09_025623) do
   create_table "developers", force: :cascade do |t|
     t.string "name"
     t.integer "user_id"
@@ -74,6 +74,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_07_09_023114) do
     t.boolean "is_successful"
     t.integer "kudos_id"
     t.integer "manager_id"
+    t.integer "project_id"
   end
 
   create_table "users", force: :cascade do |t|

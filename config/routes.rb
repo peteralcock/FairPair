@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  devise_for :users
+
   namespace :admin do
       resources :sprints
       resources :pto_requests
@@ -14,9 +16,8 @@ Rails.application.routes.draw do
   resources :pairings
   resources :sprints
   resources :developers
-  devise_for :users
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
   # Defines the root path route ("/")
-  # root "articles#index"
+  root "admin/sprints#index"
 end

@@ -26,10 +26,10 @@ class PtoRequestDashboard < Administrate::BaseDashboard
   # By default, it's limited to four items to reduce clutter on index pages.
   # Feel free to add, remove, or rearrange items.
   COLLECTION_ATTRIBUTES = %i[
-    id
-    approved_at
     developer
+    start_date
     end_date
+    approved_at
   ].freeze
 
   # SHOW_PAGE_ATTRIBUTES
@@ -51,13 +51,11 @@ class PtoRequestDashboard < Administrate::BaseDashboard
   # an array of attributes that will be displayed
   # on the model's form (`new` and `edit`) pages.
   FORM_ATTRIBUTES = %i[
-    approved_at
     developer
-    end_date
-    manager_id
-    note
     start_date
+    end_date
     status
+    note
   ].freeze
 
   # COLLECTION_FILTERS
