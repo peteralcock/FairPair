@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_07_09_004628) do
+ActiveRecord::Schema[7.0].define(version: 2023_07_09_005123) do
   create_table "developers", force: :cascade do |t|
     t.string "name"
     t.integer "user_id"
@@ -28,6 +28,22 @@ ActiveRecord::Schema[7.0].define(version: 2023_07_09_004628) do
     t.index ["developer1_id"], name: "index_pairings_on_developer1_id"
     t.index ["developer2_id"], name: "index_pairings_on_developer2_id"
     t.index ["sprint_id"], name: "index_pairings_on_sprint_id"
+  end
+
+  create_table "projects", force: :cascade do |t|
+    t.integer "lead_developer_id"
+    t.string "name"
+    t.text "description"
+    t.string "status"
+    t.integer "user_id"
+    t.integer "manager_id"
+    t.string "source_url"
+    t.boolean "is_complete"
+    t.datetime "start_date"
+    t.datetime "end_date"
+    t.integer "priority"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "pto_requests", force: :cascade do |t|
