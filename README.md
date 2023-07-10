@@ -1,4 +1,4 @@
-# FairPear
+# FairPair
 ![Honorable Pear](pear.png?raw=true "Honorable Pear")
 
 
@@ -78,7 +78,6 @@ Machine Learning for Pairing Schedule: Use machine learning algorithms to optimi
 
 ## License
 
-FairPair is released under the [MIT License](https://opensource.org/licenses/MIT).
 
 
 
