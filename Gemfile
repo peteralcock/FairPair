@@ -55,6 +55,12 @@ group :development, :test do
   gem "debug", platforms: %i[ mri mingw x64_mingw ]
 end
 
+group :production do
+  gem 'rack-cache'
+  gem 'rack-attack'
+  gem 'rack-ssl-enforcer'
+  gem 'rack-cors', :require => 'rack/cors'
+end
 
 group :test do
   gem "capybara"
@@ -103,7 +109,9 @@ group :development, :test do
   gem 'better_errors'
   gem 'fuubar'
   gem 'growl'
+  gem 'brakeman'
 
+  gem 'bundler-audit'
   # gem 'letter_opener'
   # gem 'letter_opener_web'
 
@@ -111,16 +119,29 @@ end
 
 
 # EXPERIMENTAL
-# gem 'sidekiq'
-# gem 'chartkick'
-# gem 'hightop'
-# gem 'groupdate'
-# gem 'by_star'
-# gem 'searchkick'
-# gem 'mailkick'
-# gem 'searchjoy'
-# gem 'redis-objects'
-# gem 'errbit'
+#   gem 'sidekiq'
+#   gem 'sidetiq'
+#   gem 'sidekiq-monitor-stats'
+#   gem 'sidekiq-benchmark'
+#   gem 'sidekiq-statistic'
+#   gem 'sidekiq-failures'
+#   gem 'sidekiq-throttler'
+#   gem 'sidekiq-grouping'
+#   gem 'sidekiq-limit_fetch'
+#   gem 'sidekiq_mailer'
+#   gem 'sidekiq-unique-jobs'
+#   gem 'sidekiq-status'
+#   gem 'chartkick'
+#   gem 'hightop'
+#   gem 'groupdate'
+#   gem 'by_star'
+#   gem 'searchkick'
+#   gem 'mailkick'
+#   gem 'searchjoy'
+#   gem 'redis-objects'
+#   gem 'errbit'
+#   gem 'connection_pool'
+#
 #
 # DEPLOYMENT
 #   gem 'capistrano'
@@ -132,5 +153,5 @@ end
 #   gem 'capistrano-composer'
 #
 # SAASIFICATION
-# gem 'apartment'
-# gem 'apartment-sidekiq'
+#   gem 'apartment'
+#   gem 'apartment-sidekiq'

@@ -237,6 +237,13 @@ GEM
       nio4r (~> 2.0)
     racc (1.7.1)
     rack (2.2.7)
+    rack-attack (6.6.1)
+      rack (>= 1.0, < 3)
+    rack-cache (1.13.0)
+      rack (>= 0.4)
+    rack-cors (2.0.1)
+      rack (>= 2.0.0)
+    rack-ssl-enforcer (0.2.9)
     rack-test (2.1.0)
       rack (>= 1.3)
     rails (7.0.6)
@@ -397,6 +404,10 @@ DEPENDENCIES
   lol_dba
   pry-rails
   puma (~> 5.0)
+  rack-attack
+  rack-cache
+  rack-cors
+  rack-ssl-enforcer
   rails (~> 7.0.6)
   rspec-rails
   selenium-webdriver
