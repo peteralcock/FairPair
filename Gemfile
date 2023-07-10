@@ -122,7 +122,6 @@ end
 #   gem 'sidekiq'
 #   gem 'sidetiq'
 #   gem 'sidekiq-monitor-stats'
-#   gem 'sidekiq-benchmark'
 #   gem 'sidekiq-statistic'
 #   gem 'sidekiq-failures'
 #   gem 'sidekiq-grouping'
@@ -135,6 +134,7 @@ end
 #   gem 'sidekiq-lock'
 #   gem 'sidekiq-statsd'
 #   gem 'sidekiq-throttler'
+#   gem 'sidekiq-benchmark'
 
 # EXPERIMENTAL
 #   gem 'chartkick'
