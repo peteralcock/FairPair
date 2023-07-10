@@ -1,3 +1,5 @@
+.rakeTasks
+.generators
 config/secrets.yml
 config/database.yml
 .env
