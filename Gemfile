@@ -60,6 +60,16 @@ group :test do
   gem "capybara"
   gem "selenium-webdriver"
   gem "webdrivers"
+  gem 'brakeman'
+  gem 'bundler-audit'
+  gem 'bullet'
+  gem 'lol_dba'
+  gem 'benchmark-ips'
+  #   gem 'derailed'
+  #   gem 'stackprof'
+  #   gem 'method_profiler'
+  #   gem 'database_cleaner'
+  #   gem 'serverspec'
 end
 
 group  :development do
@@ -68,10 +78,12 @@ group  :development do
   gem 'pry-rails'
   gem 'web-console', group: :development
   gem 'guard', require: false
+  gem 'spork', require: false
   gem 'guard-rails'
   gem 'guard-sidekiq'
   gem 'guard-rspec'
-  gem 'spork', require: false
+  gem 'guard-bundler'
+
 end
 
 group :development, :test do
@@ -88,4 +100,37 @@ group :development, :test do
   gem 'selenium-webdriver'
   gem 'ffaker'
   gem 'factory_bot_rails'
+  gem 'better_errors'
+  gem 'fuubar'
+  gem 'growl'
+
+  # gem 'letter_opener'
+  # gem 'letter_opener_web'
+
 end
+
+
+# EXPERIMENTAL
+# gem 'sidekiq'
+# gem 'chartkick'
+# gem 'hightop'
+# gem 'groupdate'
+# gem 'by_star'
+# gem 'searchkick'
+# gem 'mailkick'
+# gem 'searchjoy'
+# gem 'redis-objects'
+# gem 'errbit'
+#
+# DEPLOYMENT
+#   gem 'capistrano'
+#   gem 'capistrano-rvm'
+#   gem 'capistrano-bundler'
+#   gem 'capistrano-rails'
+#   gem 'capistrano-sidekiq' # , github: 'seuros/capistrano-sidekiq'
+#   gem 'capistrano-rails-console'
+#   gem 'capistrano-composer'
+#
+# SAASIFICATION
+# gem 'apartment'
+# gem 'apartment-sidekiq'
