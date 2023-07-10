@@ -1,3 +1,4 @@
+require 'rails_helper'
 RSpec.describe "Sprint Planning", type: :feature do
   let(:sprint) { create(:sprint) } # Assuming you have a factory for Project
 

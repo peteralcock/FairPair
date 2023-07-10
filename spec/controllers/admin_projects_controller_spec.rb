@@ -1,11 +1,8 @@
 require 'rails_helper'
 RSpec.describe Admin::ProjectsController, type: :controller do
   describe 'POST #create' do
-    let(:admin) { create(:user, role: :admin) }
+    let(:admin) { create(:user) }
 
-    before do
-      sign_in admin
-    end
 
     it 'creates a new project' do
       expect {

@@ -1,11 +1,11 @@
 FactoryBot.define do
   factory :pto_request do
-    start_date { "2023-07-08 20:46:28" }
-    end_date { "2023-07-11 20:46:28" }
-    developer { nil }
     status { nil}
-    approved_at { "2023-07-08 20:47:28" }
-    manager_id { nil }
+    approved_at { [Time.now,nil].sample}
+    manager_id { 1 }
     note { "May I please go to the Marilyn Manson concert instead?" }
+    developer { create(:developer) }
+    start_date { Date.today }
+    end_date { Date.today + 1.week }
   end
 end

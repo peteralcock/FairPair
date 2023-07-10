@@ -5,4 +5,5 @@ class Developer < ApplicationRecord
   has_many :pto_requests
   belongs_to :sprint, optional: true
   belongs_to :user, optional: true
+  has_many :projects
 end
