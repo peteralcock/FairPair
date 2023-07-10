@@ -116,5 +116,6 @@ This section outlines the steps to deploy this application on AWS using Docker c
 
 FairPair is released under the [GNU AFFERO License](LICENSE)
 
+![Can't get a dolla outta me](license.png?raw=true "Can't get a dolla outta me")
 
 
