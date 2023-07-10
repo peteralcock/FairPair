@@ -71,6 +71,9 @@ group :test do
   gem 'bullet'
   gem 'lol_dba'
   gem 'benchmark-ips'
+  gem 'derailed'
+  gem 'stackprof'
+  gem 'method_profiler'
   #   gem 'derailed'
   #   gem 'stackprof'
   #   gem 'method_profiler'
@@ -89,7 +92,6 @@ group  :development do
   gem 'guard-sidekiq'
   gem 'guard-rspec'
   gem 'guard-bundler'
-
 end
 
 group :development, :test do
@@ -110,27 +112,31 @@ group :development, :test do
   gem 'fuubar'
   gem 'growl'
   gem 'brakeman'
-
   gem 'bundler-audit'
   # gem 'letter_opener'
   # gem 'letter_opener_web'
 
 end
 
-
-# EXPERIMENTAL
+# BACKGROUND PROCESSING
 #   gem 'sidekiq'
 #   gem 'sidetiq'
 #   gem 'sidekiq-monitor-stats'
 #   gem 'sidekiq-benchmark'
 #   gem 'sidekiq-statistic'
 #   gem 'sidekiq-failures'
-#   gem 'sidekiq-throttler'
 #   gem 'sidekiq-grouping'
 #   gem 'sidekiq-limit_fetch'
 #   gem 'sidekiq_mailer'
 #   gem 'sidekiq-unique-jobs'
 #   gem 'sidekiq-status'
+#   gem 'sidekiq-history'
+#   gem 'sidekiq-hierarchy'
+#   gem 'sidekiq-lock'
+#   gem 'sidekiq-statsd'
+#   gem 'sidekiq-throttler'
+
+# EXPERIMENTAL
 #   gem 'chartkick'
 #   gem 'hightop'
 #   gem 'groupdate'
@@ -141,7 +147,7 @@ end
 #   gem 'redis-objects'
 #   gem 'errbit'
 #   gem 'connection_pool'
-#
+#   gem 'blazer'
 #
 # DEPLOYMENT
 #   gem 'capistrano'
@@ -151,6 +157,7 @@ end
 #   gem 'capistrano-sidekiq' # , github: 'seuros/capistrano-sidekiq'
 #   gem 'capistrano-rails-console'
 #   gem 'capistrano-composer'
+#
 #
 # SAASIFICATION
 #   gem 'apartment'
