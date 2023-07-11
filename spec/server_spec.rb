@@ -12,9 +12,9 @@ describe 'Redis service' do
   end
 end
 
-describe 'Access to www.themealdb.com' do
-  it 'is available' do
-    host = 'www.themealdb.com'
-    expect(host(host)).to be_reachable
-  end
-end
+# describe 'Access to www.themealdb.com' do
+#   it 'is available' do
+#     host = 'www.themealdb.com'
+#     expect(host(host)).to be_reachable
+#   end
+# end
