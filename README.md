@@ -1,4 +1,4 @@
-# FairPair
+# PairFair
 ![The Honorable Judge Fair Pear](pear.png?raw=true "The Honorable Judge Fair Pear")
 
 
