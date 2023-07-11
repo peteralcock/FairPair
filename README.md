@@ -1,5 +1,5 @@
-# FairPear
-![Honorable Pear](pear.png?raw=true "Honorable Pear")
+# FairPair
+![The Honorable Judge Fair Pear](pear.png?raw=true "The Honorable Judge Fair Pear")
 
 
 ## Developer Pairing Rotation Scheduler
