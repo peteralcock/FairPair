@@ -1,6 +1,9 @@
 # PairFair
-![The Honorable Judge Fair Pear](pear.png?raw=true "The Honorable Judge Fair Pear")
 Fair & Balanced Software Developer Pair-Programming Sprint Planner
+---
+
+![The Honorable Judge Fair Pear](pear.png?raw=true "The Honorable Judge Fair Pear")
+
 
 FairPair is a Ruby on Rails application designed to automate the process of creating and managing a developer pairing rotation schedule for software engineering projects. The application allows the lead developer to input project details, including the number of sprints, developer names, and any scheduled paid time off (PTO). The application then generates a pairing rotation schedule, aiming to ensure each developer pairs with every other developer an equal number of times, or as close to equal as possible. The lead developer can view, save, and edit the schedule.
 
