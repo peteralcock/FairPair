@@ -18,7 +18,7 @@ RSpec.describe Sprint, type: :model do
 
     it "pairs each developer with the correct partner" do
       developers.each do |developer|
-        pairing = Pairing.find_by(developer1: developer) || Pairing.find_by(developer2: developer)
+        pairing = Pairing.find_by(developer1: developer.id) || Pairing.find_by(developer2: developer.id)
         expect(pairing).to be_present
       end
     end
