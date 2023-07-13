@@ -15,6 +15,7 @@ class ProjectDashboard < Administrate::BaseDashboard
     is_complete: Field::Boolean,
     lead_developer: Field::BelongsTo,
     manager_id: Field::Number,
+    number_of_sprints: Field::Number,
     name: Field::String,
     pairings: Field::HasMany,
     priority: Field::Number,
@@ -33,9 +34,10 @@ class ProjectDashboard < Administrate::BaseDashboard
   # By default, it's limited to four items to reduce clutter on index pages.
   # Feel free to add, remove, or rearrange items.
   COLLECTION_ATTRIBUTES = %i[
+    priority
     name
     developers
-    is_complete
+    sprints
   ].freeze
 
   # SHOW_PAGE_ATTRIBUTES
@@ -47,6 +49,7 @@ class ProjectDashboard < Administrate::BaseDashboard
     developers
     start_date
     end_date
+    number_of_sprints
     is_complete
     pairings
     priority
@@ -64,6 +67,7 @@ class ProjectDashboard < Administrate::BaseDashboard
     description
     start_date
     end_date
+    number_of_sprints
     is_complete
     priority
     source_url

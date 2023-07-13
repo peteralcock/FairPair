@@ -1,8 +1,8 @@
 class PairingScheduler
+
   def initialize(sprint, developers)
     @sprint = sprint
-    @developers = developers
-    @schedule = []
+    @developers = developers || Developer.all
   end
 
   def generate
