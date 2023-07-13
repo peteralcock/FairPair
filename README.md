@@ -1,12 +1,12 @@
 # Tandem
 Fair Pair Programming For Humans
 ---
+"If it's not made here, you can be sure it's made in Tandem."
 
 ![The Honorable Judge Fair Pear](pear.png?raw=true "The Honorable Judge Fair Pear")
 
 Any schedule made in Tandem will automatically handle the pairing rotation schedule for software engineering projects in a fair and balanced manor to promote postitive developer experiences.
 
-"If it's not made here, you can be sure it's made in Tandem."
 
 ## Core Features
 
@@ -44,7 +44,7 @@ Gamification of Pair Programming: Add elements of gamification, such as points o
 
 ## License 
 
-FairPair is released under the [GNU GENERAL PUBLIC LICENSE](LICENSE)
+FairPair is unpaid work and released under the [GNU GENERAL PUBLIC LICENSE](LICENSE)
 
-![Can't get a dolla outta me](license.jpg?raw=true "Can't get a dolla outta me")
+![madeintandem](license.jpg?raw=true "madeintandem")
 
