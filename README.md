@@ -4,7 +4,9 @@ Fair Pair Programming For Humans
 
 ![The Honorable Judge Fair Pear](pear.png?raw=true "The Honorable Judge Fair Pear")
 
-Tandem is a Ruby on Rails application designed to automate the process of creating and managing a developer pairing rotation schedule for software engineering projects in a fair and balanced manor that promotes postitive developer relations.
+Any schedule made in Tandem will automatically handle the pairing rotation schedule for software engineering projects in a fair and balanced manor to promote postitive developer experiences.
+
+"If it's not made here, you can be sure it's made in Tandem."
 
 ## Core Features
 
