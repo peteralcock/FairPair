@@ -1,3 +1,4 @@
+require 'rails_helper'
 RSpec.describe Project, type: :model do
   it "is valid with a name, number of sprints, and developers" do
     developer1 = Developer.new(name: 'Alice')

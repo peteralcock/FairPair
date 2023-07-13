@@ -1,3 +1,4 @@
+require 'rails_helper'
 RSpec.describe Developer, type: :model do
   it "is valid with a name" do
     developer = Developer.new(name: 'Alice')
