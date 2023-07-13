@@ -1,10 +1,10 @@
-# PairFair
-Pair-Programming Sprint Planner
+# Tandem
+Fair Pair Programming For Humans
 ---
 
 ![The Honorable Judge Fair Pear](pear.png?raw=true "The Honorable Judge Fair Pear")
 
-FairPair is a Ruby on Rails application designed to automate the process of creating and managing a developer pairing rotation schedule for software engineering projects in a fair and balanced manor that promotes postitive developer relations.
+Tandem is a Ruby on Rails application designed to automate the process of creating and managing a developer pairing rotation schedule for software engineering projects in a fair and balanced manor that promotes postitive developer relations.
 
 ## Core Features
 
