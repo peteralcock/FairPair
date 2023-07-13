@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_07_13_004636) do
+ActiveRecord::Schema[7.0].define(version: 2023_07_13_075923) do
   create_table "developers", force: :cascade do |t|
     t.string "name"
     t.integer "user_id"
@@ -19,6 +19,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_07_13_004636) do
     t.integer "sprint_it"
     t.integer "sprint_id"
     t.integer "project_id"
+    t.string "email"
   end
 
   create_table "pairings", force: :cascade do |t|
@@ -29,6 +30,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_07_13_004636) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.integer "project_id"
+    t.integer "developer_id"
     t.index ["developer1_id"], name: "index_pairings_on_developer1_id"
     t.index ["developer2_id"], name: "index_pairings_on_developer2_id"
     t.index ["sprint_id"], name: "index_pairings_on_sprint_id"
@@ -61,7 +63,22 @@ ActiveRecord::Schema[7.0].define(version: 2023_07_13_004636) do
     t.text "note"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.boolean "is_approved"
+    t.integer "approved_by"
     t.index ["developer_id"], name: "index_pto_requests_on_developer_id"
+  end
+
+  create_table "schedules", force: :cascade do |t|
+    t.json "json_schedule"
+    t.text "raw_text_schedule"
+    t.integer "project_id"
+    t.integer "sprint_id"
+    t.integer "user_id"
+    t.integer "manager_id"
+    t.boolean "is_approved"
+    t.integer "approved_at"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "sprints", force: :cascade do |t|
@@ -90,6 +107,9 @@ ActiveRecord::Schema[7.0].define(version: 2023_07_13_004636) do
     t.datetime "updated_at", null: false
     t.integer "developer_id"
     t.string "name"
+    t.string "first_name"
+    t.string "last_name"
+    t.string "phone_number"
     t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
