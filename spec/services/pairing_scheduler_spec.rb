@@ -2,9 +2,8 @@ require 'rails_helper'
 
 RSpec.describe PairingScheduler, type: :service do
   let(:project) { create(:project) }
-  let(:sprint) { create(:sprint, project: project) }
+  let(:sprint) { create(:sprint) }
   let(:developers) { create_list(:developer, 4) }
-
   subject(:service) { described_class.new(sprint, developers) }
 
   describe '#generate' do
