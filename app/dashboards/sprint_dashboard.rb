@@ -29,6 +29,7 @@ class SprintDashboard < Administrate::BaseDashboard
   # Feel free to add, remove, or rearrange items.
   COLLECTION_ATTRIBUTES = %i[
     name
+    project
     developers
     start_date
     end_date
@@ -38,6 +39,7 @@ class SprintDashboard < Administrate::BaseDashboard
   # an array of attributes that will be displayed on the model's show page.
   SHOW_PAGE_ATTRIBUTES = %i[
     name
+    project
     description
     developers
     start_date
@@ -54,8 +56,8 @@ class SprintDashboard < Administrate::BaseDashboard
   # on the model's form (`new` and `edit`) pages.
   FORM_ATTRIBUTES = %i[
     name
-    description
     project
+    description
     start_date
     end_date
   ].freeze
@@ -76,7 +78,7 @@ class SprintDashboard < Administrate::BaseDashboard
   # across all pages of the admin dashboard.
   #
   def display_resource(sprint)
-     "#{sprint.project.name} Sprint ##{sprint.id}"
+     "#{sprint.project.name} - Round ##{sprint.id}"
   end
 
 end

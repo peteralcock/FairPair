@@ -10,10 +10,10 @@ class Developer < ApplicationRecord
   has_many :pairings_as_dev2, class_name: 'Pairing', foreign_key: 'developer2_id'
   #  has_many :pairings, -> { where(developer1_id: 'id') ||  where(developer2_id: 'id' )}, class_name: 'Pairing'
   has_many :pairings, :through => :sprint
-  has_many :projects, :through => :pairings
-  has_many :sprints, :through => :projects
 
   def pairings
     Pairing.where("developer1_id = ? OR developer2_id = ?", id, id)
   end
+
+
 end

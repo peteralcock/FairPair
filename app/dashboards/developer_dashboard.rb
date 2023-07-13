@@ -11,8 +11,6 @@ class DeveloperDashboard < Administrate::BaseDashboard
     id: Field::Number,
     name: Field::String,
     pairings: Field::HasMany,
-    projects: Field::HasMany,
-    sprints: Field::HasMany,
     user_id: Field::Number,
     created_at: Field::DateTime,
     updated_at: Field::DateTime,
@@ -26,8 +24,6 @@ class DeveloperDashboard < Administrate::BaseDashboard
   COLLECTION_ATTRIBUTES = %i[
     name
     pairings
-    sprints
-    projects
   ].freeze
 
   # SHOW_PAGE_ATTRIBUTES
@@ -36,8 +32,6 @@ class DeveloperDashboard < Administrate::BaseDashboard
     id
     name
     pairings
-    projects
-    sprints
     created_at
     updated_at
   ].freeze
@@ -47,10 +41,7 @@ class DeveloperDashboard < Administrate::BaseDashboard
   # on the model's form (`new` and `edit`) pages.
   FORM_ATTRIBUTES = %i[
     name
-    pairings
-    projects
-    sprints
-    user_id
+    email
   ].freeze
 
   # COLLECTION_FILTERS

@@ -3,6 +3,11 @@ class Sprint < ApplicationRecord
   has_many :pairings
   has_many :developers
   has_many :pto_requests, :through => :developers
+  before_create :add_name
+
+  def add_name
+    self.name = [self.project.name, " ##{self.id}"].join
+  end
 
   def generate_pair_rotation_schedule
     pairings = []

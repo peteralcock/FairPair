@@ -11,7 +11,6 @@ class PairingDashboard < Administrate::BaseDashboard
     id: Field::Number,
     developer1: Field::BelongsTo,
     developer2: Field::BelongsTo,
-    project: Field::HasOne,
     sprint: Field::BelongsTo,
     user_id: Field::Number,
     created_at: Field::DateTime,
@@ -27,7 +26,7 @@ class PairingDashboard < Administrate::BaseDashboard
     id
     developer1
     developer2
-    project
+    sprint
   ].freeze
 
   # SHOW_PAGE_ATTRIBUTES
@@ -36,7 +35,6 @@ class PairingDashboard < Administrate::BaseDashboard
     id
     developer1
     developer2
-    project
     sprint
     user_id
     created_at
@@ -49,9 +47,7 @@ class PairingDashboard < Administrate::BaseDashboard
   FORM_ATTRIBUTES = %i[
     developer1
     developer2
-    project
     sprint
-    user_id
   ].freeze
 
   # COLLECTION_FILTERS
