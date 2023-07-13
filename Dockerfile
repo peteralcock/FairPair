@@ -1,8 +1,9 @@
 # Use an official Ruby runtime as a parent image
-FROM ruby:3.1.2
+FROM ruby:3.1.4
 
 # Install nodejs and yarn
-RUN apt-get update -qq && apt-get install -y nodejs postgresql-client yarn
+RUN apt-get update -qq && apt-get install -y nodejs postgresql-client npm
+RUN npm install -g yarn
 
 # Set the working directory in the container to /app
 WORKDIR /app
@@ -14,7 +15,7 @@ COPY . /app
 RUN bundle install
 
 # Install any needed packages specified in package.json
-RUN yarn install
+RUN npm nstall
 
 # Expose port 3000 for the API
 EXPOSE 3000

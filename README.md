@@ -48,6 +48,11 @@ The lead developer can view/edit the generated schedule. The schedule clearly sh
 
 FairPair includes RSpec tests to ensure the functionality is working as expected. To run the tests, use the command `bundle exec rspec`.
 
+## Deployent
+Ansible: ansible-playbook -i inventory.ini deploy_pairfair.yml
+Terraform (w/ Ansible!): terraform apply
+
+
 ## TO-DO
 
 Integration with External Calendar Services: Integrate with services like Google Calendar or Outlook to automatically add pair programming sessions to developers' calendars.

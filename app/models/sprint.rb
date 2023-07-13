@@ -1,8 +1,9 @@
 class Sprint < ApplicationRecord
   belongs_to :project, optional: true
   has_many :pairings
-  has_many :developers
+  has_many :developers, :through => :pairings
   has_many :pto_requests, :through => :developers
+
 
   def generate_pair_rotation_schedule
     developers = self.developers

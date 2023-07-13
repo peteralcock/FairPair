@@ -1,0 +1,10 @@
+[ec2]
+192.168.1.101 ansible_user=ubuntu
+[digitalocean]
+192.168.1.102 ansible_user=root
+[linode]
+192.168.1.102 ansible_user=root
+[raspberrypi]
+10.3.141.1 ansible_user=pi
+[local]
+10.3.141.51 ansible_user=lucy

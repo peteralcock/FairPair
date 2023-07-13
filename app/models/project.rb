@@ -1,8 +1,10 @@
 class Project < ApplicationRecord
+  validates_presence_of :name
+  validates_presence_of :number_of_sprints
   belongs_to :lead_developer, class_name: 'Developer', optional: true
-  has_many :developers
   has_many :sprints
   has_many :pairings, through: :sprints
+  has_many :developers, through: :sprints
 
   def generate_pair_rotation_schedules
     developers = self.sprints.map(&:developers)

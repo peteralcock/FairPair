@@ -1,0 +1,21 @@
+---
+- hosts: ec2
+  become: yes
+  tasks:
+    - name: Update apt cache
+      apt: update_cache=yes
+
+    - name: Install Docker
+      apt: name=docker.io state=present
+
+    - name: Pull PairFair Docker image
+      docker_image:
+        name: peteralcock/pairfair
+        source: pull
+
+    - name: Run PairFair Docker container
+      docker_container:
+        name: pairfair
+        image: peteralcock/pairfair
+        state: started
+        published_ports: 80:3000

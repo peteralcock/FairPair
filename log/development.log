@@ -1714,3 +1714,257 @@ Migrating to AddNameToProjects (20230710102349)
   [1m[36mActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
   [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
   [1m[36mActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for 127.0.0.1 at 2023-07-12 20:45:20 -0400
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Admin::SprintsController#index as HTML
+  Rendering layout /opt/homebrew/lib/ruby/gems/3.1.0/gems/administrate-0.18.0/app/views/layouts/administrate/application.html.erb
+  Rendering /opt/homebrew/lib/ruby/gems/3.1.0/gems/administrate-0.18.0/app/views/administrate/application/index.html.erb within layouts/administrate/application
+  Rendered /opt/homebrew/lib/ruby/gems/3.1.0/gems/administrate-0.18.0/app/views/administrate/application/_search.html.erb (Duration: 1.2ms | Allocations: 1962)
+  Rendered /opt/homebrew/lib/ruby/gems/3.1.0/gems/administrate-0.18.0/app/views/administrate/application/_index_header.html.erb (Duration: 14.1ms | Allocations: 12844)
+  Rendered /opt/homebrew/lib/ruby/gems/3.1.0/gems/administrate-0.18.0/app/views/administrate/application/_collection_header_actions.html.erb (Duration: 0.5ms | Allocations: 158)
+  [1m[36mSprint Load (0.6ms)[0m  [1m[34mSELECT "sprints".* FROM "sprints" LIMIT ? OFFSET ?[0m  [["LIMIT", 20], ["OFFSET", 0]]
+  Rendered /opt/homebrew/lib/ruby/gems/3.1.0/gems/administrate-0.18.0/app/views/administrate/application/_collection.html.erb (Duration: 9.0ms | Allocations: 5555)
+  Rendered /opt/homebrew/lib/ruby/gems/3.1.0/gems/administrate-0.18.0/app/views/administrate/application/_pagination.html.erb (Duration: 1.6ms | Allocations: 1023)
+  Rendered /opt/homebrew/lib/ruby/gems/3.1.0/gems/administrate-0.18.0/app/views/administrate/application/index.html.erb within layouts/administrate/application (Duration: 28.1ms | Allocations: 21572)
+  Rendered /opt/homebrew/lib/ruby/gems/3.1.0/gems/administrate-0.18.0/app/views/administrate/application/_stylesheet.html.erb (Duration: 270.5ms | Allocations: 120910)
+  Rendered /opt/homebrew/lib/ruby/gems/3.1.0/gems/administrate-0.18.0/app/views/administrate/application/_icons.html.erb (Duration: 0.4ms | Allocations: 115)
+  Rendered /opt/homebrew/lib/ruby/gems/3.1.0/gems/administrate-0.18.0/app/views/administrate/application/_navigation.html.erb (Duration: 10.7ms | Allocations: 11223)
+  Rendered /opt/homebrew/lib/ruby/gems/3.1.0/gems/administrate-0.18.0/app/views/administrate/application/_flashes.html.erb (Duration: 0.2ms | Allocations: 313)
+  Rendered /opt/homebrew/lib/ruby/gems/3.1.0/gems/administrate-0.18.0/app/views/administrate/application/_javascript.html.erb (Duration: 1.4ms | Allocations: 2805)
+  Rendered layout /opt/homebrew/lib/ruby/gems/3.1.0/gems/administrate-0.18.0/app/views/layouts/administrate/application.html.erb (Duration: 316.2ms | Allocations: 160118)
+Completed 200 OK in 358ms (Views: 338.0ms | ActiveRecord: 1.0ms | Allocations: 183499)
+
+
+Started GET "/" for 127.0.0.1 at 2023-07-12 20:45:20 -0400
+Started GET "/" for 127.0.0.1 at 2023-07-12 20:45:20 -0400
+Processing by Admin::SprintsController#index as HTML
+  Rendering layout /opt/homebrew/lib/ruby/gems/3.1.0/gems/administrate-0.18.0/app/views/layouts/administrate/application.html.erb
+  Rendering /opt/homebrew/lib/ruby/gems/3.1.0/gems/administrate-0.18.0/app/views/administrate/application/index.html.erb within layouts/administrate/application
+  Rendered /opt/homebrew/lib/ruby/gems/3.1.0/gems/administrate-0.18.0/app/views/administrate/application/_search.html.erb (Duration: 0.3ms | Allocations: 325)
+  Rendered /opt/homebrew/lib/ruby/gems/3.1.0/gems/administrate-0.18.0/app/views/administrate/application/_index_header.html.erb (Duration: 2.1ms | Allocations: 2077)
+  Rendered /opt/homebrew/lib/ruby/gems/3.1.0/gems/administrate-0.18.0/app/views/administrate/application/_collection_header_actions.html.erb (Duration: 0.0ms | Allocations: 31)
+  [1m[36mSprint Load (0.2ms)[0m  [1m[34mSELECT "sprints".* FROM "sprints" LIMIT ? OFFSET ?[0m  [["LIMIT", 20], ["OFFSET", 0]]
+Processing by Admin::SprintsController#index as HTML
+  Rendered /opt/homebrew/lib/ruby/gems/3.1.0/gems/administrate-0.18.0/app/views/administrate/application/_collection.html.erb (Duration: 12.2ms | Allocations: 5397)
+  Rendered /opt/homebrew/lib/ruby/gems/3.1.0/gems/administrate-0.18.0/app/views/administrate/application/_pagination.html.erb (Duration: 0.1ms | Allocations: 126)
+  Rendered /opt/homebrew/lib/ruby/gems/3.1.0/gems/administrate-0.18.0/app/views/administrate/application/index.html.erb within layouts/administrate/application (Duration: 15.3ms | Allocations: 8033)
+  Rendering layout /opt/homebrew/lib/ruby/gems/3.1.0/gems/administrate-0.18.0/app/views/layouts/administrate/application.html.erb
+  Rendering /opt/homebrew/lib/ruby/gems/3.1.0/gems/administrate-0.18.0/app/views/administrate/application/index.html.erb within layouts/administrate/application
+  Rendered /opt/homebrew/lib/ruby/gems/3.1.0/gems/administrate-0.18.0/app/views/administrate/application/_search.html.erb (Duration: 0.2ms | Allocations: 277)
+  Rendered /opt/homebrew/lib/ruby/gems/3.1.0/gems/administrate-0.18.0/app/views/administrate/application/_stylesheet.html.erb (Duration: 4.4ms | Allocations: 3848)
+  Rendered /opt/homebrew/lib/ruby/gems/3.1.0/gems/administrate-0.18.0/app/views/administrate/application/_icons.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered /opt/homebrew/lib/ruby/gems/3.1.0/gems/administrate-0.18.0/app/views/administrate/application/_navigation.html.erb (Duration: 1.5ms | Allocations: 3027)
+  Rendered /opt/homebrew/lib/ruby/gems/3.1.0/gems/administrate-0.18.0/app/views/administrate/application/_flashes.html.erb (Duration: 0.0ms | Allocations: 28)
+  Rendered /opt/homebrew/lib/ruby/gems/3.1.0/gems/administrate-0.18.0/app/views/administrate/application/_index_header.html.erb (Duration: 9.4ms | Allocations: 7747)
+  Rendered /opt/homebrew/lib/ruby/gems/3.1.0/gems/administrate-0.18.0/app/views/administrate/application/_collection_header_actions.html.erb (Duration: 0.0ms | Allocations: 31)
+  [1m[36mSprint Load (0.0ms)[0m  [1m[34mSELECT "sprints".* FROM "sprints" LIMIT ? OFFSET ?[0m  [["LIMIT", 20], ["OFFSET", 0]]
+  Rendered /opt/homebrew/lib/ruby/gems/3.1.0/gems/administrate-0.18.0/app/views/administrate/application/_collection.html.erb (Duration: 2.1ms | Allocations: 3511)
+  Rendered /opt/homebrew/lib/ruby/gems/3.1.0/gems/administrate-0.18.0/app/views/administrate/application/_pagination.html.erb (Duration: 0.1ms | Allocations: 109)
+  Rendered /opt/homebrew/lib/ruby/gems/3.1.0/gems/administrate-0.18.0/app/views/administrate/application/index.html.erb within layouts/administrate/application (Duration: 13.9ms | Allocations: 16282)
+  Rendered /opt/homebrew/lib/ruby/gems/3.1.0/gems/administrate-0.18.0/app/views/administrate/application/_javascript.html.erb (Duration: 5.6ms | Allocations: 9495)
+  Rendered layout /opt/homebrew/lib/ruby/gems/3.1.0/gems/administrate-0.18.0/app/views/layouts/administrate/application.html.erb (Duration: 33.0ms | Allocations: 30014)
+Completed 200 OK in 34ms (Views: 33.5ms | ActiveRecord: 0.2ms | Allocations: 30861)
+
+
+  Rendered /opt/homebrew/lib/ruby/gems/3.1.0/gems/administrate-0.18.0/app/views/administrate/application/_stylesheet.html.erb (Duration: 3.8ms | Allocations: 5552)
+  Rendered /opt/homebrew/lib/ruby/gems/3.1.0/gems/administrate-0.18.0/app/views/administrate/application/_icons.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered /opt/homebrew/lib/ruby/gems/3.1.0/gems/administrate-0.18.0/app/views/administrate/application/_navigation.html.erb (Duration: 2.1ms | Allocations: 3022)
+  Rendered /opt/homebrew/lib/ruby/gems/3.1.0/gems/administrate-0.18.0/app/views/administrate/application/_flashes.html.erb (Duration: 0.0ms | Allocations: 22)
+  Rendered /opt/homebrew/lib/ruby/gems/3.1.0/gems/administrate-0.18.0/app/views/administrate/application/_javascript.html.erb (Duration: 16.7ms | Allocations: 2441)
+  Rendered layout /opt/homebrew/lib/ruby/gems/3.1.0/gems/administrate-0.18.0/app/views/layouts/administrate/application.html.erb (Duration: 46.4ms | Allocations: 29514)
+Completed 200 OK in 51ms (Views: 46.5ms | ActiveRecord: 0.2ms | Allocations: 30849)
+
+
+Started GET "/admin/pairings" for 127.0.0.1 at 2023-07-12 20:45:28 -0400
+Processing by Admin::PairingsController#index as HTML
+  Rendering layout /opt/homebrew/lib/ruby/gems/3.1.0/gems/administrate-0.18.0/app/views/layouts/administrate/application.html.erb
+  Rendering /opt/homebrew/lib/ruby/gems/3.1.0/gems/administrate-0.18.0/app/views/administrate/application/index.html.erb within layouts/administrate/application
+  Rendered /opt/homebrew/lib/ruby/gems/3.1.0/gems/administrate-0.18.0/app/views/administrate/application/_index_header.html.erb (Duration: 39.8ms | Allocations: 4959)
+  Rendered /opt/homebrew/lib/ruby/gems/3.1.0/gems/administrate-0.18.0/app/views/administrate/application/_collection_header_actions.html.erb (Duration: 0.1ms | Allocations: 32)
+  [1m[36mPairing Load (0.3ms)[0m  [1m[34mSELECT "pairings".* FROM "pairings" LIMIT ? OFFSET ?[0m  [["LIMIT", 20], ["OFFSET", 0]]
+  Rendered /opt/homebrew/lib/ruby/gems/3.1.0/gems/administrate-0.18.0/app/views/administrate/application/_collection.html.erb (Duration: 7.2ms | Allocations: 4812)
+  Rendered /opt/homebrew/lib/ruby/gems/3.1.0/gems/administrate-0.18.0/app/views/administrate/application/_pagination.html.erb (Duration: 0.3ms | Allocations: 203)
+  Rendered /opt/homebrew/lib/ruby/gems/3.1.0/gems/administrate-0.18.0/app/views/administrate/application/index.html.erb within layouts/administrate/application (Duration: 48.9ms | Allocations: 10784)
+  Rendered /opt/homebrew/lib/ruby/gems/3.1.0/gems/administrate-0.18.0/app/views/administrate/application/_stylesheet.html.erb (Duration: 2.9ms | Allocations: 2208)
+  Rendered /opt/homebrew/lib/ruby/gems/3.1.0/gems/administrate-0.18.0/app/views/administrate/application/_icons.html.erb (Duration: 0.0ms | Allocations: 9)
+  Rendered /opt/homebrew/lib/ruby/gems/3.1.0/gems/administrate-0.18.0/app/views/administrate/application/_navigation.html.erb (Duration: 1.9ms | Allocations: 3105)
+  Rendered /opt/homebrew/lib/ruby/gems/3.1.0/gems/administrate-0.18.0/app/views/administrate/application/_flashes.html.erb (Duration: 0.0ms | Allocations: 31)
+  Rendered /opt/homebrew/lib/ruby/gems/3.1.0/gems/administrate-0.18.0/app/views/administrate/application/_javascript.html.erb (Duration: 2.2ms | Allocations: 2450)
+  Rendered layout /opt/homebrew/lib/ruby/gems/3.1.0/gems/administrate-0.18.0/app/views/layouts/administrate/application.html.erb (Duration: 59.6ms | Allocations: 20255)
+Completed 200 OK in 71ms (Views: 63.0ms | ActiveRecord: 0.7ms | Allocations: 22408)
+
+
+Started GET "/admin/developers" for 127.0.0.1 at 2023-07-12 20:45:29 -0400
+Processing by Admin::DevelopersController#index as HTML
+  Rendering layout /opt/homebrew/lib/ruby/gems/3.1.0/gems/administrate-0.18.0/app/views/layouts/administrate/application.html.erb
+  Rendering /opt/homebrew/lib/ruby/gems/3.1.0/gems/administrate-0.18.0/app/views/administrate/application/index.html.erb within layouts/administrate/application
+  Rendered /opt/homebrew/lib/ruby/gems/3.1.0/gems/administrate-0.18.0/app/views/administrate/application/_search.html.erb (Duration: 0.8ms | Allocations: 375)
+  Rendered /opt/homebrew/lib/ruby/gems/3.1.0/gems/administrate-0.18.0/app/views/administrate/application/_index_header.html.erb (Duration: 7.3ms | Allocations: 4823)
+  Rendered /opt/homebrew/lib/ruby/gems/3.1.0/gems/administrate-0.18.0/app/views/administrate/application/_collection_header_actions.html.erb (Duration: 0.1ms | Allocations: 32)
+  [1m[36mDeveloper Load (0.1ms)[0m  [1m[34mSELECT "developers".* FROM "developers" LIMIT ? OFFSET ?[0m  [["LIMIT", 20], ["OFFSET", 0]]
+  Rendered /opt/homebrew/lib/ruby/gems/3.1.0/gems/administrate-0.18.0/app/views/administrate/application/_collection.html.erb (Duration: 3.3ms | Allocations: 2601)
+  Rendered /opt/homebrew/lib/ruby/gems/3.1.0/gems/administrate-0.18.0/app/views/administrate/application/_pagination.html.erb (Duration: 0.3ms | Allocations: 181)
+  Rendered /opt/homebrew/lib/ruby/gems/3.1.0/gems/administrate-0.18.0/app/views/administrate/application/index.html.erb within layouts/administrate/application (Duration: 12.7ms | Allocations: 8380)
+  Rendered /opt/homebrew/lib/ruby/gems/3.1.0/gems/administrate-0.18.0/app/views/administrate/application/_stylesheet.html.erb (Duration: 2.5ms | Allocations: 2186)
+  Rendered /opt/homebrew/lib/ruby/gems/3.1.0/gems/administrate-0.18.0/app/views/administrate/application/_icons.html.erb (Duration: 0.0ms | Allocations: 9)
+  Rendered /opt/homebrew/lib/ruby/gems/3.1.0/gems/administrate-0.18.0/app/views/administrate/application/_navigation.html.erb (Duration: 2.6ms | Allocations: 3043)
+  Rendered /opt/homebrew/lib/ruby/gems/3.1.0/gems/administrate-0.18.0/app/views/administrate/application/_flashes.html.erb (Duration: 0.1ms | Allocations: 31)
+  Rendered /opt/homebrew/lib/ruby/gems/3.1.0/gems/administrate-0.18.0/app/views/administrate/application/_javascript.html.erb (Duration: 2.0ms | Allocations: 2449)
+  Rendered layout /opt/homebrew/lib/ruby/gems/3.1.0/gems/administrate-0.18.0/app/views/layouts/administrate/application.html.erb (Duration: 22.6ms | Allocations: 17743)
+Completed 200 OK in 29ms (Views: 25.5ms | ActiveRecord: 0.7ms | Allocations: 19831)
+
+
+Started GET "/admin/users" for 127.0.0.1 at 2023-07-12 20:45:29 -0400
+Processing by Admin::UsersController#index as HTML
+  Rendering layout /opt/homebrew/lib/ruby/gems/3.1.0/gems/administrate-0.18.0/app/views/layouts/administrate/application.html.erb
+  Rendering /opt/homebrew/lib/ruby/gems/3.1.0/gems/administrate-0.18.0/app/views/administrate/application/index.html.erb within layouts/administrate/application
+  Rendered /opt/homebrew/lib/ruby/gems/3.1.0/gems/administrate-0.18.0/app/views/administrate/application/_search.html.erb (Duration: 0.7ms | Allocations: 373)
+  Rendered /opt/homebrew/lib/ruby/gems/3.1.0/gems/administrate-0.18.0/app/views/administrate/application/_index_header.html.erb (Duration: 11.3ms | Allocations: 6707)
+  Rendered /opt/homebrew/lib/ruby/gems/3.1.0/gems/administrate-0.18.0/app/views/administrate/application/_collection_header_actions.html.erb (Duration: 0.1ms | Allocations: 32)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" LIMIT ? OFFSET ?[0m  [["LIMIT", 20], ["OFFSET", 0]]
+  Rendered /opt/homebrew/lib/ruby/gems/3.1.0/gems/administrate-0.18.0/app/views/administrate/application/_collection.html.erb (Duration: 3.3ms | Allocations: 3344)
+  Rendered /opt/homebrew/lib/ruby/gems/3.1.0/gems/administrate-0.18.0/app/views/administrate/application/_pagination.html.erb (Duration: 0.2ms | Allocations: 181)
+  Rendered /opt/homebrew/lib/ruby/gems/3.1.0/gems/administrate-0.18.0/app/views/administrate/application/index.html.erb within layouts/administrate/application (Duration: 16.6ms | Allocations: 10993)
+  Rendered /opt/homebrew/lib/ruby/gems/3.1.0/gems/administrate-0.18.0/app/views/administrate/application/_stylesheet.html.erb (Duration: 2.3ms | Allocations: 2185)
+  Rendered /opt/homebrew/lib/ruby/gems/3.1.0/gems/administrate-0.18.0/app/views/administrate/application/_icons.html.erb (Duration: 0.0ms | Allocations: 9)
+  Rendered /opt/homebrew/lib/ruby/gems/3.1.0/gems/administrate-0.18.0/app/views/administrate/application/_navigation.html.erb (Duration: 2.3ms | Allocations: 3043)
+  Rendered /opt/homebrew/lib/ruby/gems/3.1.0/gems/administrate-0.18.0/app/views/administrate/application/_flashes.html.erb (Duration: 0.0ms | Allocations: 31)
+  Rendered /opt/homebrew/lib/ruby/gems/3.1.0/gems/administrate-0.18.0/app/views/administrate/application/_javascript.html.erb (Duration: 2.0ms | Allocations: 2449)
+  Rendered layout /opt/homebrew/lib/ruby/gems/3.1.0/gems/administrate-0.18.0/app/views/layouts/administrate/application.html.erb (Duration: 26.0ms | Allocations: 20329)
+Completed 200 OK in 32ms (Views: 27.4ms | ActiveRecord: 0.9ms | Allocations: 22486)
+
+
+Started GET "/admin/sprints" for 127.0.0.1 at 2023-07-12 20:45:33 -0400
+Processing by Admin::SprintsController#index as HTML
+  Rendering layout /opt/homebrew/lib/ruby/gems/3.1.0/gems/administrate-0.18.0/app/views/layouts/administrate/application.html.erb
+  Rendering /opt/homebrew/lib/ruby/gems/3.1.0/gems/administrate-0.18.0/app/views/administrate/application/index.html.erb within layouts/administrate/application
+  Rendered /opt/homebrew/lib/ruby/gems/3.1.0/gems/administrate-0.18.0/app/views/administrate/application/_search.html.erb (Duration: 0.5ms | Allocations: 275)
+  Rendered /opt/homebrew/lib/ruby/gems/3.1.0/gems/administrate-0.18.0/app/views/administrate/application/_index_header.html.erb (Duration: 2.6ms | Allocations: 1962)
+  Rendered /opt/homebrew/lib/ruby/gems/3.1.0/gems/administrate-0.18.0/app/views/administrate/application/_collection_header_actions.html.erb (Duration: 0.1ms | Allocations: 31)
+  [1m[36mSprint Load (0.1ms)[0m  [1m[34mSELECT "sprints".* FROM "sprints" LIMIT ? OFFSET ?[0m  [["LIMIT", 20], ["OFFSET", 0]]
+  Rendered /opt/homebrew/lib/ruby/gems/3.1.0/gems/administrate-0.18.0/app/views/administrate/application/_collection.html.erb (Duration: 4.0ms | Allocations: 3194)
+  Rendered /opt/homebrew/lib/ruby/gems/3.1.0/gems/administrate-0.18.0/app/views/administrate/application/_pagination.html.erb (Duration: 0.2ms | Allocations: 109)
+  Rendered /opt/homebrew/lib/ruby/gems/3.1.0/gems/administrate-0.18.0/app/views/administrate/application/index.html.erb within layouts/administrate/application (Duration: 7.2ms | Allocations: 5646)
+  Rendered /opt/homebrew/lib/ruby/gems/3.1.0/gems/administrate-0.18.0/app/views/administrate/application/_stylesheet.html.erb (Duration: 2.9ms | Allocations: 2041)
+  Rendered /opt/homebrew/lib/ruby/gems/3.1.0/gems/administrate-0.18.0/app/views/administrate/application/_icons.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered /opt/homebrew/lib/ruby/gems/3.1.0/gems/administrate-0.18.0/app/views/administrate/application/_navigation.html.erb (Duration: 3.6ms | Allocations: 3022)
+  Rendered /opt/homebrew/lib/ruby/gems/3.1.0/gems/administrate-0.18.0/app/views/administrate/application/_flashes.html.erb (Duration: 0.0ms | Allocations: 22)
+  Rendered /opt/homebrew/lib/ruby/gems/3.1.0/gems/administrate-0.18.0/app/views/administrate/application/_javascript.html.erb (Duration: 2.2ms | Allocations: 2441)
+  Rendered layout /opt/homebrew/lib/ruby/gems/3.1.0/gems/administrate-0.18.0/app/views/layouts/administrate/application.html.erb (Duration: 17.2ms | Allocations: 14101)
+Completed 200 OK in 19ms (Views: 17.6ms | ActiveRecord: 0.1ms | Allocations: 14806)
+
+
+Started GET "/admin/sprints/new" for 127.0.0.1 at 2023-07-12 20:45:34 -0400
+Processing by Admin::SprintsController#new as HTML
+  Rendering layout /opt/homebrew/lib/ruby/gems/3.1.0/gems/administrate-0.18.0/app/views/layouts/administrate/application.html.erb
+  Rendering /opt/homebrew/lib/ruby/gems/3.1.0/gems/administrate-0.18.0/app/views/administrate/application/new.html.erb within layouts/administrate/application
+  Rendered /opt/homebrew/lib/ruby/gems/3.1.0/gems/administrate-0.18.0/app/views/fields/string/_form.html.erb (Duration: 4.8ms | Allocations: 1310)
+  Rendered /opt/homebrew/lib/ruby/gems/3.1.0/gems/administrate-0.18.0/app/views/fields/text/_form.html.erb (Duration: 1.8ms | Allocations: 689)
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  Rendered /opt/homebrew/lib/ruby/gems/3.1.0/gems/administrate-0.18.0/app/views/fields/belongs_to/_form.html.erb (Duration: 3.5ms | Allocations: 2526)
+  Rendered /opt/homebrew/lib/ruby/gems/3.1.0/gems/administrate-0.18.0/app/views/fields/date_time/_form.html.erb (Duration: 2.1ms | Allocations: 822)
+  Rendered /opt/homebrew/lib/ruby/gems/3.1.0/gems/administrate-0.18.0/app/views/fields/date_time/_form.html.erb (Duration: 0.2ms | Allocations: 287)
+  Rendered /opt/homebrew/lib/ruby/gems/3.1.0/gems/administrate-0.18.0/app/views/administrate/application/_form.html.erb (Duration: 25.9ms | Allocations: 10225)
+  Rendered /opt/homebrew/lib/ruby/gems/3.1.0/gems/administrate-0.18.0/app/views/administrate/application/new.html.erb within layouts/administrate/application (Duration: 30.3ms | Allocations: 11214)
+  Rendered /opt/homebrew/lib/ruby/gems/3.1.0/gems/administrate-0.18.0/app/views/administrate/application/_stylesheet.html.erb (Duration: 1.8ms | Allocations: 2160)
+  Rendered /opt/homebrew/lib/ruby/gems/3.1.0/gems/administrate-0.18.0/app/views/administrate/application/_icons.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered /opt/homebrew/lib/ruby/gems/3.1.0/gems/administrate-0.18.0/app/views/administrate/application/_navigation.html.erb (Duration: 2.5ms | Allocations: 4161)
+  Rendered /opt/homebrew/lib/ruby/gems/3.1.0/gems/administrate-0.18.0/app/views/administrate/application/_flashes.html.erb (Duration: 0.0ms | Allocations: 28)
+  Rendered /opt/homebrew/lib/ruby/gems/3.1.0/gems/administrate-0.18.0/app/views/administrate/application/_javascript.html.erb (Duration: 1.6ms | Allocations: 2445)
+  Rendered layout /opt/homebrew/lib/ruby/gems/3.1.0/gems/administrate-0.18.0/app/views/layouts/administrate/application.html.erb (Duration: 37.2ms | Allocations: 20787)
+Completed 200 OK in 41ms (Views: 39.0ms | ActiveRecord: 0.3ms | Allocations: 21622)
+
+
+Started GET "/admin/projects" for 127.0.0.1 at 2023-07-12 20:45:36 -0400
+Processing by Admin::ProjectsController#index as HTML
+  Rendering layout /opt/homebrew/lib/ruby/gems/3.1.0/gems/administrate-0.18.0/app/views/layouts/administrate/application.html.erb
+  Rendering /opt/homebrew/lib/ruby/gems/3.1.0/gems/administrate-0.18.0/app/views/administrate/application/index.html.erb within layouts/administrate/application
+  Rendered /opt/homebrew/lib/ruby/gems/3.1.0/gems/administrate-0.18.0/app/views/administrate/application/_search.html.erb (Duration: 0.5ms | Allocations: 373)
+  Rendered /opt/homebrew/lib/ruby/gems/3.1.0/gems/administrate-0.18.0/app/views/administrate/application/_index_header.html.erb (Duration: 9.7ms | Allocations: 7677)
+  Rendered /opt/homebrew/lib/ruby/gems/3.1.0/gems/administrate-0.18.0/app/views/administrate/application/_collection_header_actions.html.erb (Duration: 0.1ms | Allocations: 32)
+  [1m[36mProject Load (0.1ms)[0m  [1m[34mSELECT "projects".* FROM "projects" LIMIT ? OFFSET ?[0m  [["LIMIT", 20], ["OFFSET", 0]]
+  Rendered /opt/homebrew/lib/ruby/gems/3.1.0/gems/administrate-0.18.0/app/views/administrate/application/_collection.html.erb (Duration: 3.1ms | Allocations: 3143)
+  Rendered /opt/homebrew/lib/ruby/gems/3.1.0/gems/administrate-0.18.0/app/views/administrate/application/_pagination.html.erb (Duration: 0.3ms | Allocations: 181)
+  Rendered /opt/homebrew/lib/ruby/gems/3.1.0/gems/administrate-0.18.0/app/views/administrate/application/index.html.erb within layouts/administrate/application (Duration: 14.6ms | Allocations: 11776)
+  Rendered /opt/homebrew/lib/ruby/gems/3.1.0/gems/administrate-0.18.0/app/views/administrate/application/_stylesheet.html.erb (Duration: 2.2ms | Allocations: 2185)
+  Rendered /opt/homebrew/lib/ruby/gems/3.1.0/gems/administrate-0.18.0/app/views/administrate/application/_icons.html.erb (Duration: 0.0ms | Allocations: 9)
+  Rendered /opt/homebrew/lib/ruby/gems/3.1.0/gems/administrate-0.18.0/app/views/administrate/application/_navigation.html.erb (Duration: 2.5ms | Allocations: 3043)
+  Rendered /opt/homebrew/lib/ruby/gems/3.1.0/gems/administrate-0.18.0/app/views/administrate/application/_flashes.html.erb (Duration: 0.0ms | Allocations: 31)
+  Rendered /opt/homebrew/lib/ruby/gems/3.1.0/gems/administrate-0.18.0/app/views/administrate/application/_javascript.html.erb (Duration: 1.9ms | Allocations: 2449)
+  Rendered layout /opt/homebrew/lib/ruby/gems/3.1.0/gems/administrate-0.18.0/app/views/layouts/administrate/application.html.erb (Duration: 23.8ms | Allocations: 21148)
+Completed 200 OK in 31ms (Views: 26.0ms | ActiveRecord: 0.8ms | Allocations: 23311)
+
+
+Started GET "/admin/projects/new" for 127.0.0.1 at 2023-07-12 20:45:38 -0400
+Processing by Admin::ProjectsController#new as HTML
+  Rendering layout /opt/homebrew/lib/ruby/gems/3.1.0/gems/administrate-0.18.0/app/views/layouts/administrate/application.html.erb
+  Rendering /opt/homebrew/lib/ruby/gems/3.1.0/gems/administrate-0.18.0/app/views/administrate/application/new.html.erb within layouts/administrate/application
+  Rendered /opt/homebrew/lib/ruby/gems/3.1.0/gems/administrate-0.18.0/app/views/fields/text/_form.html.erb (Duration: 0.3ms | Allocations: 308)
+  [1m[36mDeveloper Load (0.1ms)[0m  [1m[34mSELECT "developers".* FROM "developers"[0m
+  Rendered /opt/homebrew/lib/ruby/gems/3.1.0/gems/administrate-0.18.0/app/views/fields/has_many/_form.html.erb (Duration: 7.1ms | Allocations: 3694)
+  Rendered /opt/homebrew/lib/ruby/gems/3.1.0/gems/administrate-0.18.0/app/views/fields/date_time/_form.html.erb (Duration: 0.2ms | Allocations: 298)
+  Rendered /opt/homebrew/lib/ruby/gems/3.1.0/gems/administrate-0.18.0/app/views/fields/boolean/_form.html.erb (Duration: 2.3ms | Allocations: 881)
+  [1m[36mCACHE Developer Load (0.0ms)[0m  [1m[34mSELECT "developers".* FROM "developers"[0m
+  Rendered /opt/homebrew/lib/ruby/gems/3.1.0/gems/administrate-0.18.0/app/views/fields/belongs_to/_form.html.erb (Duration: 1.2ms | Allocations: 1784)
+  Rendered /opt/homebrew/lib/ruby/gems/3.1.0/gems/administrate-0.18.0/app/views/fields/number/_form.html.erb (Duration: 1.5ms | Allocations: 651)
+  Rendered /opt/homebrew/lib/ruby/gems/3.1.0/gems/administrate-0.18.0/app/views/fields/string/_form.html.erb (Duration: 0.3ms | Allocations: 279)
+  [1m[36mPairing Load (0.1ms)[0m  [1m[34mSELECT "pairings".* FROM "pairings"[0m
+  Rendered /opt/homebrew/lib/ruby/gems/3.1.0/gems/administrate-0.18.0/app/views/fields/has_many/_form.html.erb (Duration: 1.9ms | Allocations: 3297)
+  Rendered /opt/homebrew/lib/ruby/gems/3.1.0/gems/administrate-0.18.0/app/views/fields/number/_form.html.erb (Duration: 0.2ms | Allocations: 259)
+  Rendered /opt/homebrew/lib/ruby/gems/3.1.0/gems/administrate-0.18.0/app/views/fields/string/_form.html.erb (Duration: 0.1ms | Allocations: 252)
+  [1m[36mSprint Load (0.1ms)[0m  [1m[34mSELECT "sprints".* FROM "sprints"[0m
+  Rendered /opt/homebrew/lib/ruby/gems/3.1.0/gems/administrate-0.18.0/app/views/fields/has_many/_form.html.erb (Duration: 1.3ms | Allocations: 2127)
+  Rendered /opt/homebrew/lib/ruby/gems/3.1.0/gems/administrate-0.18.0/app/views/fields/date_time/_form.html.erb (Duration: 0.2ms | Allocations: 254)
+  Rendered /opt/homebrew/lib/ruby/gems/3.1.0/gems/administrate-0.18.0/app/views/fields/string/_form.html.erb (Duration: 0.1ms | Allocations: 248)
+  Rendered /opt/homebrew/lib/ruby/gems/3.1.0/gems/administrate-0.18.0/app/views/fields/number/_form.html.erb (Duration: 0.1ms | Allocations: 259)
+  Rendered /opt/homebrew/lib/ruby/gems/3.1.0/gems/administrate-0.18.0/app/views/administrate/application/_form.html.erb (Duration: 37.0ms | Allocations: 21976)
+  Rendered /opt/homebrew/lib/ruby/gems/3.1.0/gems/administrate-0.18.0/app/views/administrate/application/new.html.erb within layouts/administrate/application (Duration: 38.2ms | Allocations: 22453)
+  Rendered /opt/homebrew/lib/ruby/gems/3.1.0/gems/administrate-0.18.0/app/views/administrate/application/_stylesheet.html.erb (Duration: 1.7ms | Allocations: 2157)
+  Rendered /opt/homebrew/lib/ruby/gems/3.1.0/gems/administrate-0.18.0/app/views/administrate/application/_icons.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered /opt/homebrew/lib/ruby/gems/3.1.0/gems/administrate-0.18.0/app/views/administrate/application/_navigation.html.erb (Duration: 2.2ms | Allocations: 4153)
+  Rendered /opt/homebrew/lib/ruby/gems/3.1.0/gems/administrate-0.18.0/app/views/administrate/application/_flashes.html.erb (Duration: 0.0ms | Allocations: 28)
+  Rendered /opt/homebrew/lib/ruby/gems/3.1.0/gems/administrate-0.18.0/app/views/administrate/application/_javascript.html.erb (Duration: 1.5ms | Allocations: 2445)
+  Rendered layout /opt/homebrew/lib/ruby/gems/3.1.0/gems/administrate-0.18.0/app/views/layouts/administrate/application.html.erb (Duration: 44.1ms | Allocations: 32014)
+Completed 200 OK in 47ms (Views: 45.1ms | ActiveRecord: 0.3ms | Allocations: 32624)
+
+
+Started POST "/admin/projects" for 127.0.0.1 at 2023-07-12 20:46:00 -0400
+Processing by Admin::ProjectsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "project"=>{"description"=>"Demo", "developer_ids"=>[""], "end_date"=>"2023-07-12T01:01:01", "is_complete"=>"0", "lead_developer_id"=>"", "manager_id"=>"", "name"=>"", "pairing_ids"=>[""], "priority"=>"", "source_url"=>"", "sprint_ids"=>[""], "start_date"=>"0001-01-01T01:01:01", "status"=>"", "user_id"=>""}, "commit"=>"Create Project"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mProject Create (2.1ms)[0m  [1m[32mINSERT INTO "projects" ("lead_developer_id", "name", "description", "status", "user_id", "manager_id", "source_url", "is_complete", "start_date", "end_date", "priority", "created_at", "updated_at", "number_of_sprints") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["lead_developer_id", nil], ["name", ""], ["description", "Demo"], ["status", ""], ["user_id", nil], ["manager_id", nil], ["source_url", ""], ["is_complete", 0], ["start_date", "0001-01-01 01:01:01"], ["end_date", "2023-07-12 01:01:01"], ["priority", nil], ["created_at", "2023-07-13 00:46:00.862699"], ["updated_at", "2023-07-13 00:46:00.862699"], ["number_of_sprints", nil]]
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://127.0.0.1:3000/admin/projects/1
+Completed 302 Found in 11ms (ActiveRecord: 3.1ms | Allocations: 6838)
+
+
+Started GET "/admin/projects/1" for 127.0.0.1 at 2023-07-12 20:46:00 -0400
+Processing by Admin::ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProject Load (0.1ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout /opt/homebrew/lib/ruby/gems/3.1.0/gems/administrate-0.18.0/app/views/layouts/administrate/application.html.erb
+  Rendering /opt/homebrew/lib/ruby/gems/3.1.0/gems/administrate-0.18.0/app/views/administrate/application/show.html.erb within layouts/administrate/application
+  Rendered /opt/homebrew/lib/ruby/gems/3.1.0/gems/administrate-0.18.0/app/views/fields/number/_show.html.erb (Duration: 0.4ms | Allocations: 163)
+  Rendered /opt/homebrew/lib/ruby/gems/3.1.0/gems/administrate-0.18.0/app/views/fields/text/_show.html.erb (Duration: 0.5ms | Allocations: 144)
+  [1m[36mDeveloper Exists? (1.0ms)[0m  [1m[34mSELECT 1 AS one FROM "developers" WHERE "developers"."project_id" = ? LIMIT ? OFFSET ?[0m  [["project_id", 1], ["LIMIT", 1], ["OFFSET", 0]]
+  Rendered /opt/homebrew/lib/ruby/gems/3.1.0/gems/administrate-0.18.0/app/views/fields/has_many/_show.html.erb (Duration: 6.9ms | Allocations: 4551)
+  Rendered /opt/homebrew/lib/ruby/gems/3.1.0/gems/administrate-0.18.0/app/views/administrate/application/show.html.erb within layouts/administrate/application (Duration: 12.0ms | Allocations: 8036)
+  Rendered layout /opt/homebrew/lib/ruby/gems/3.1.0/gems/administrate-0.18.0/app/views/layouts/administrate/application.html.erb (Duration: 12.0ms | Allocations: 8113)
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 1.1ms | Allocations: 11290)
+
+
+
+ActiveRecord::StatementInvalid - SQLite3::SQLException: no such column: developers.project_id:
+
+Started POST "/__better_errors/761534a8bc00f76a/variables" for 127.0.0.1 at 2023-07-12 20:46:00 -0400
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to AddProjectIdToDevelopers (20230713004636)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.9ms)[0m  [1m[35mALTER TABLE "developers" ADD "project_id" integer[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.0ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20230713004636"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m

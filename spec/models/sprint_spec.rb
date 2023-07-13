@@ -3,6 +3,7 @@
 require 'rails_helper'
 
 RSpec.describe Sprint, type: :model do
+
   describe ".create_pairings" do
     let(:sprint) { create(:sprint) }
     let(:developers) { create_list(:developer, 6) }

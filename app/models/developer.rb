@@ -1,9 +1,10 @@
 class Developer < ApplicationRecord
   validates_presence_of :name
-  has_many :pairings, :foreign_key => 'developer1'
-  has_many :pairings, :foreign_key => 'developer2'
+  belongs_to :current_sprint, :class_name => "Sprint", :optional => true
+  has_many :pairings_as_developer1, class_name: 'Pairing', foreign_key: 'developer1_id'
+  has_many :pairings_as_developer2, class_name: 'Pairing', foreign_key: 'developer2_id'
   has_many :pto_requests
-  belongs_to :sprint, optional: true
-  belongs_to :user, optional: true
-  has_many :projects
+  has_many :pairings, :through => :current_sprint
+
 end
+
