@@ -25,7 +25,9 @@ class DeveloperDashboard < Administrate::BaseDashboard
   # Feel free to add, remove, or rearrange items.
   COLLECTION_ATTRIBUTES = %i[
     name
+    pairings
     sprints
+    projects
   ].freeze
 
   # SHOW_PAGE_ATTRIBUTES
@@ -66,7 +68,7 @@ class DeveloperDashboard < Administrate::BaseDashboard
   # Overwrite this method to customize how developers are displayed
   # across all pages of the admin dashboard.
   #
-  # def display_resource(developer)
-  #   "Developer ##{developer.id}"
-  # end
+  def display_resource(developer)
+     "#{developer.name} (##{developer.id})"
+  end
 end

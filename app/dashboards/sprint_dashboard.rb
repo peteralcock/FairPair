@@ -37,16 +37,14 @@ class SprintDashboard < Administrate::BaseDashboard
   # SHOW_PAGE_ATTRIBUTES
   # an array of attributes that will be displayed on the model's show page.
   SHOW_PAGE_ATTRIBUTES = %i[
-    id
+    name
     description
     developers
+    start_date
     end_date
-    name
     number
     pairings
     project
-    start_date
-    user_id
     created_at
     updated_at
   ].freeze
@@ -77,7 +75,8 @@ class SprintDashboard < Administrate::BaseDashboard
   # Overwrite this method to customize how sprints are displayed
   # across all pages of the admin dashboard.
   #
-  # def display_resource(sprint)
-  #   "Sprint ##{sprint.id}"
-  # end
+  def display_resource(sprint)
+     "#{sprint.project.name} Sprint ##{sprint.id}"
+  end
+
 end

@@ -4,7 +4,7 @@ class Project < ApplicationRecord
   belongs_to :lead_developer, class_name: 'Developer', optional: true
   has_many :sprints
   has_many :pairings, through: :sprints
-  has_many :developers, through: :pairings
+  has_many :developers, through: :sprints
   has_many :pto_requests, :through => :developers
 
   def generate_pair_rotation_schedules

@@ -65,15 +65,15 @@ class PtoRequestDashboard < Administrate::BaseDashboard
   # For example to add an option to search for open resources by typing "open:"
   # in the search field:
   #
-  #   COLLECTION_FILTERS = {
-  #     open: ->(resources) { resources.where(open: true) }
-  #   }.freeze
+     COLLECTION_FILTERS = {
+       open: ->(resources) { resources.where(is_approved: nil) }
+     }.freeze
   COLLECTION_FILTERS = {}.freeze
 
   # Overwrite this method to customize how pto requests are displayed
   # across all pages of the admin dashboard.
   #
-  # def display_resource(pto_request)
-  #   "PtoRequest ##{pto_request.id}"
-  # end
+  def display_resource(pto_request)
+     "##{pto_request.developer.name} #{pto_request.note || 'just wants some time off...'} "
+  end
 end

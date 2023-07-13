@@ -41,21 +41,17 @@ class ProjectDashboard < Administrate::BaseDashboard
   # SHOW_PAGE_ATTRIBUTES
   # an array of attributes that will be displayed on the model's show page.
   SHOW_PAGE_ATTRIBUTES = %i[
-    id
+    name
     description
+    lead_developer
     developers
+    start_date
     end_date
     is_complete
-    lead_developer
-    manager_id
-    name
     pairings
     priority
-    source_url
     sprints
-    start_date
     status
-    user_id
     created_at
     updated_at
   ].freeze
@@ -64,20 +60,14 @@ class ProjectDashboard < Administrate::BaseDashboard
   # an array of attributes that will be displayed
   # on the model's form (`new` and `edit`) pages.
   FORM_ATTRIBUTES = %i[
+    name
     description
-    developers
+    start_date
     end_date
     is_complete
-    lead_developer
-    manager_id
-    name
-    pairings
     priority
     source_url
-    sprints
-    start_date
     status
-    user_id
   ].freeze
 
   # COLLECTION_FILTERS
@@ -95,7 +85,7 @@ class ProjectDashboard < Administrate::BaseDashboard
   # Overwrite this method to customize how projects are displayed
   # across all pages of the admin dashboard.
   #
-  # def display_resource(project)
-  #   "Project ##{project.id}"
-  # end
+  def display_resource(project)
+     "OPERATION: ##{project.name}"
+  end
 end

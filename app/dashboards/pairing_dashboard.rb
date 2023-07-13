@@ -69,7 +69,7 @@ class PairingDashboard < Administrate::BaseDashboard
   # Overwrite this method to customize how pairings are displayed
   # across all pages of the admin dashboard.
   #
-  # def display_resource(pairing)
-  #   "Pairing ##{pairing.id}"
-  # end
+  def display_resource(pairing)
+     "Pairing ##{pairing.developer1.name} with #{pairing.developer2.name || "some very fine French wine..."}"
+  end
 end
