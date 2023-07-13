@@ -1,11 +1,12 @@
 # Tandem
 Fair Pair Programming For Humans
----
+
 "If it's not made here, you can be sure it's made in Tandem."
 
 ![The Honorable Judge Fair Pear](pear.png?raw=true "The Honorable Judge Fair Pear")
 
-Any schedule made in Tandem will automatically handle the pairing rotation schedule for software engineering projects in a fair and balanced manor to promote postitive developer experiences.
+Any project made in Tandem will automatically handle pairing rotation schedules for software engineering projects in a fair and balanced manor to promote postitive developer experiences.
+
 
 
 ## Core Features
