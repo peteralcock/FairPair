@@ -14,6 +14,7 @@ require 'ffaker'
   (rand(1..5)).times do
     project = user.projects.create!(
         name: FFaker::HipsterIpsum.words(rand(1..4)).join(' '),
+        priority: rand(1..100),
         number_of_sprints: rand(1..10)
     )
     puts project.name
@@ -26,12 +27,13 @@ require 'ffaker'
     puts developers.count
 
     # Assign developers to pairings for each sprint
-    project.sprints.each do |sprint|
-      puts "Adding sprint #{sprint.id}"
-      PairingScheduler.new(
-          sprint,
-          Developer.all).generate
-    end
+    # DONE AUTOMATICALLY BY CALLBACK
+    # project.sprints.each do |sprint|
+    #   puts "Adding sprint #{sprint.id}"
+    #   PairingScheduler.new(
+    #       sprint,
+    #       Developer.all).generate
+    # end
 
     # A random number of developers create PTO requests
     developers.sample(rand(1..developers.size)).each do |developer|

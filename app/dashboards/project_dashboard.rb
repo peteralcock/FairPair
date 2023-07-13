@@ -90,6 +90,6 @@ class ProjectDashboard < Administrate::BaseDashboard
   # across all pages of the admin dashboard.
   #
   def display_resource(project)
-     "OPERATION: ##{project.name}"
+     "OPERATION: #{project.name}"
   end
 end

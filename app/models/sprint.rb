@@ -3,12 +3,19 @@ class Sprint < ApplicationRecord
   has_many :pairings
   has_many :developers
   has_many :pto_requests, :through => :developers
-  after_create :add_name
+  after_create :add_name, :assign_pairings
+
 
   def add_name
     unless self.name
       self.update(:name => [self.project.name, ": Round ##{self.id}"].join)
     end
+  end
+
+  def assign_pairings
+    vacation_ids = PtoRequest.where(:is_approved => true).pluck(:developer_id)
+    developers = Developer.where.not(:id => vacation_ids).all
+    PairingScheduler.new(self,developers)
   end
 
   def generate_pair_rotation_schedule
