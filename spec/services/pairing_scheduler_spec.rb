@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 RSpec.describe PairingScheduler, type: :service do
-  let(:sprint) { create(:project) }
+  let(:project) { create(:project) }
   let(:sprint) { create(:sprint, project: project) }
   let(:developers) { create_list(:developer, 4) }
 
