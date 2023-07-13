@@ -7,7 +7,7 @@ class Sprint < ApplicationRecord
 
   def add_name
     unless self.name
-      self.update(:name => [self.project.name, " ##{self.id}"].join)
+      self.update(:name => [self.project.name, ": Round ##{self.id}"].join)
     end
   end
 
