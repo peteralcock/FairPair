@@ -26,15 +26,6 @@ require 'ffaker'
     puts "Test Developers:"
     puts developers.count
 
-    # Assign developers to pairings for each sprint
-    # DONE AUTOMATICALLY BY CALLBACK
-    # project.sprints.each do |sprint|
-    #   puts "Adding sprint #{sprint.id}"
-    #   PairingScheduler.new(
-    #       sprint,
-    #       Developer.all).generate
-    # end
-
     # A random number of developers create PTO requests
     developers.sample(rand(1..developers.size)).each do |developer|
       start_date = Date.today + rand(1..30).days
