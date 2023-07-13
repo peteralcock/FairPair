@@ -39,10 +39,8 @@ The lead developer can view/edit the generated schedule. The schedule clearly sh
 1. Open your web browser and navigate to `localhost:3000`.
 2. Register or log in as the lead developer.
 3. From the dashboard, click on "New Project" to input the project details.
-4. Input the number of sprints, the names of the developers, and any PTO.
-5. Click on "Generate Schedule" to generate the pairing rotation schedule.
-6. View the generated schedule. The schedule shows who is pairing with whom during each sprint and who is on vacation or working solo.
-7. Save the schedule for later viewing and editing.
+4. Input the number of sprints, project details, etc.
+5. Sprints will auto-assign developers based on infreqency of interactions with other developers such that all may meet their co-workers more efficiently.
 
 ## Testing
 
