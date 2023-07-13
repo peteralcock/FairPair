@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :schedules
   devise_for :users
 
   namespace :admin do
@@ -11,11 +12,15 @@ Rails.application.routes.draw do
 
       root to: "sprints#index"
     end
-  resources :projects
-  resources :pto_requests
-  resources :pairings
-  resources :sprints
-  resources :developers
+  resources :projects do
+    resources :sprints do
+      resources :pairings do
+        resources :developers do
+          resources :pto_requests
+        end
+      end
+    end
+  end
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
   # Defines the root path route ("/")
