@@ -17,8 +17,6 @@ Projects made in Tandem will automatically handle pairing rotation schedules for
 ### Pair Rotation Scheduler
 The application generates a pairing rotation schedule based on the inputted project details. The schedule aims to ensure each developer pairs with every other developer an equal number of times, or as close to equal as possible.
 
-## Development
-
 ### Prerequisites
 - Ruby 3.1.2
 - Rails 7.0.4
