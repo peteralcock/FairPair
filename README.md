@@ -41,7 +41,7 @@ Gamification of Pair Programming: Add elements of gamification, such as points o
 
 ## License 
 
-FairPair is unpaid work and released under the [GNU GENERAL PUBLIC LICENSE](LICENSE)
+Tandem is unpaid work and released under the [GNU GENERAL PUBLIC LICENSE](LICENSE)
 
 ![madeintandem](license.jpg?raw=true "madeintandem")
 
