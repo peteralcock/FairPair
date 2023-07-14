@@ -1,6 +1,8 @@
 # Tandem
 
 "All is fair when we pair."
+
+
 ![The Honorable Judge Fair Pear](pear.png?raw=true "The Honorable Judge Fair Pear")
 
 With Tandem, pair programming is an integral part of the development workflow. We believe that pairing results in more effective problem solving and fewer bugs. It also builds a sense of shared responsibility for code and provides the opportunity to learn from each other.
