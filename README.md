@@ -5,13 +5,9 @@
 
 ![The Honorable Judge Fair Pear](pear.png?raw=true "The Honorable Judge Fair Pear")
 
-With Tandem, pair programming is an integral part of the development workflow. We believe that pairing results in more effective problem solving and fewer bugs. It also builds a sense of shared responsibility for code and provides the opportunity to learn from each other.
-On Tandem projects, each team has a lead developer who ensures that the developers on the team are rotating pairs frequently. For example, Dev 1 and Dev 2 paired during the last sprint, but in the upcoming sprint, Dev 1 should pair with Dev 3 and Dev 2 should pair with Dev 4.
+Pair programming results in more effective problem solving and fewer bugs. It also builds a sense of shared responsibility for code and provides the opportunity to learn from each other. Each team has a lead developer who ensures that the developers on the team are rotating pairs frequently. For example, Dev 1 and Dev 2 paired during the last sprint, but in the upcoming sprint, Dev 1 should pair with Dev 3 and Dev 2 should pair with Dev 4. Currently, a lead developer creates a rotation schedule spreadsheet they have to keep track of and update at the end of each sprint with a new pair rotation. This manual assignment/tracking can be tedious, especially when you are on a long project. FairPair makes this process easier and automated for new projects. Following the initial project kick-off meeting, the lead developer usuallt needs to create a pairing rotation schedule for the duration of the project. Projects made in Tandem now will automatically handle pairing rotation schedules for software engineering projects in a fair and balanced manor to promote postitive developer experiences.
 
-Currently, a lead developer creates a rotation schedule spreadsheet they have to keep track of and update at the end of each sprint with a new pair rotation. This manual assignment/tracking can be tedious, especially when you are on a long project.
-Tandem makes this process easier and automated for new projects. Following the initial project kick-off meeting, the lead developer usuallt needs to create a pairing rotation schedule for the duration of the project. Projects made in Tandem now will automatically handle pairing rotation schedules for software engineering projects in a fair and balanced manor to promote postitive developer experiences.
-
-The goal here was create provide a user interface for a lead developer to enter the number of sprints, the names of all developers, and any paid time off they have requested during the project. Using this information, the application generates the best pairing rotation possible. By best, I mean that each developer on the team will be paired with each of their teammates an equal number of times or as close to equal as possible. The lead developer wants to see who is pairing, on vacation, and working solo during a sprint (one person will have to work solo if there is an odd number of developers on the team). Additionally, the lead developer can come back to the schedule without having to re-enter all the project and developer details.
+The goal here is to provide a user interface for a lead developer to enter the number of sprints, the names of all developers, and any paid time off they have requested during the project. Using this information, the application generates the best pairing rotation possible. By best, I mean that each developer on the team will be paired with each of their teammates an equal number of times or as close to equal as possible. The lead developer wants to see who is pairing, on vacation, and working solo during a sprint (one person will have to work solo if there is an odd number of developers on the team). Additionally, the lead developer can come back to the schedule without having to re-enter all the project and developer details.
 
 
 ## Features
@@ -48,7 +44,7 @@ The application generates a pairing rotation schedule based on the inputted proj
 
 ## License 
 
-Tandem is unpaid work and is now released under the [GNU GENERAL PUBLIC LICENSE](LICENSE)
+FairPair is unpaid work and is now released under the [GNU GENERAL PUBLIC LICENSE](LICENSE)
 
 ![madeintandem](license.jpg?raw=true "madeintandem")
 
