@@ -1,4 +1,4 @@
-# Tandem
+# FairPair
 
 "All is fair when we pair."
 
