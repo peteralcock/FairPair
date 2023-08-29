@@ -1,7 +1,7 @@
 # FairPair
-A silly example app really meant for scaffolding SaaS products. Save yourself 1000 years of work with FairPair, an opinionated sandwich of Rails-y toppings.
-
 "All is fair when we pair."
+Behold! This silly example app really meant for scaffolding SaaS products. Save yourself 1000 years of work with FairPair, an opinionated sandwich of Rails-y toppings.
+
 
 
 ![The Honorable Judge Fair Pear](pear.png?raw=true "The Honorable Judge Fair Pear")
