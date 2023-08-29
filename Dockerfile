@@ -15,7 +15,7 @@ COPY . /app
 RUN bundle install
 
 # Install any needed packages specified in package.json
-RUN npm nstall
+RUN npm install
 
 # Expose port 3000 for the API
 EXPOSE 3000
