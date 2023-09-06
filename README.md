@@ -1,12 +1,8 @@
-# FairPair
-"All is fair when we pair."
+# Speedater
+"Life is short. Date faster."
 
 ## What's this?
-Just a silly example app really meant for scaffolding SaaS products. Save yourself years of work with FairPair, an opinionated tuna sandwich of Rails-y garnishes and patterns.
-
-
-
-![The Honorable Judge Fair Pear](pear.png?raw=true "The Honorable Judge Fair Pear")
+For scaffolding SaaS products. Save yourself years of work with Speedater to start your service with my opinionated best-practices in mind.
 
 ## Introduction
 Pair programming results in more effective problem solving and fewer bugs. It also builds a sense of shared responsibility for code and provides the opportunity to learn from each other. Each team has a lead developer who ensures that the developers on the team are rotating pairs frequently. For example, Dev 1 and Dev 2 paired during the last sprint, but in the upcoming sprint, Dev 1 should pair with Dev 3 and Dev 2 should pair with Dev 4. Currently, a lead developer creates a rotation schedule spreadsheet they have to keep track of and update at the end of each sprint with a new pair rotation. This manual assignment/tracking can be tedious, especially when you are on a long project. FairPair makes this process easier and automated for new projects. Following the initial project kick-off meeting, the lead developer usuallt needs to create a pairing rotation schedule for the duration of the project. Automatically handle pairing rotation schedules for software engineering projects in a fair and balanced manor to promote postitive developer experiences.
