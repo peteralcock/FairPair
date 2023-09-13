@@ -1,4 +1,4 @@
-# Speedater
+# SpeedDater
 "Life is short. Date faster."
 
 ## What's this?
