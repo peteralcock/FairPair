@@ -1,6 +1,9 @@
 # SpeedDater
 "Life is short. Date faster."
 
+![Speed Dater](speed-dater.jpg?raw=true "Speed Dater")
+
+
 ## What's this?
 For scaffolding speed dating events. Save yourself the hassle with Speedater, designed with best practices in mind to ensure memorable dating experiences.
 
