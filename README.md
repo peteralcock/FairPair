@@ -5,7 +5,7 @@
 
 
 ## What's this?
-For scaffolding speed dating events. Save yourself the hassle with Speedater, designed with best practices in mind to ensure memorable dating experiences.
+For scaffolding speed dating events. Or any SaaS you want using the latest Rails 7 designed with my own best practices in mind to ensure a memorable dating experience... or whatever you're aiming for out there.
 
 ## Introduction
 Speed dating is an efficient way to meet multiple potential matches in a short amount of time. It provides an opportunity to interact face-to-face, leading to genuine connections. Event organizers often face challenges in creating balanced rotations to ensure participants meet as many different people as possible. Speedater automates this process, ensuring a smooth and enjoyable experience for both participants and organizers.
